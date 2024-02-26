@@ -14,11 +14,10 @@ body {
 
 header {
     @include size(1440px, 86px);
-    padding: 23px, 72px, 23px, 72px;
+    padding: 23px, 72px;
     gap: 10px;
-    background-color: #EFF3FF;
+    background-color: rgba(239, 243, 255, 1);
     position: sticky;
-    top: 0;
     .header {
         @include size(1200px, 40px);
         @include disFlexBet();
@@ -35,37 +34,22 @@ header {
             gap: 30px;
             p {
                 @include headerText1();
-                margin: 0;
             }
         }
         .header-text-2 {
-            @include disFlexBet;
+            @include size(169px, 40px);
+            @include disFlexBet();
             gap: 20px;
+            align-items: center;
             .header-btn-login {
-                @include size(107px, 40px);
-                @include btn-2();
+                @include size(42px, 18px);
+                @include mainCon1Text(700, 14px, 17.57ox, center, rgba(60, 100, 177, 1));
                 cursor: pointer;
-                background-color: rgb(239, 243, 255);
-                border: none;
-                margin: auto;
-                padding: 10px, 20px;
-                span {
-                    @include headerText2();
-                    @include size(42px, 18px);
-                }
-            }:hover {
-                transform: translateY(-5px);
-                background-color: none;
-                box-shadow: 0 10px 10px rgba(60, 100, 177, 1);
-                span {
-                    
-                box-shadow: none !important;
-                }
             }
             .header-btn {
                 @include size(107px, 40px);
                 @include btn-1();
-                padding: 10px, 20px, 10px, 20px;
+                padding: 10px, 20px;
                 cursor: pointer;
                 span {
                     @include headerText2();
@@ -77,26 +61,30 @@ header {
 
 main {
     @include size(1440px, 2352.33px);
+    @include disFlexCoCen();
     gap: 80px;
     .container-1 {
-        display: flex;
-        flex-direction: columns;
         @include size(1440px, 560px);
+        @include disFlexCoCen();
         .content-synthetic {
-            z-index: 1;
             @include size(730px, 260px);
-            position: relative;
+            @include disFlexCoCen();
+            position: absolute;
             top: 150px;
             left: 355px;
             gap: 40px;
+            margin: auto;
+            z-index: 1;
             .content-synthetic-synthetic {
                 @include size(730px, 180px);
                 gap: 30px;
                 .content-content {
                     @include size(730px, 110px);
                     @include mainCon1TextP();
+                    margin-bottom: 20px;
                     .content-h3 {
                         @include mainCon1Text(700, 44px, 55.22px, center, rgba(55, 63, 65, 1));
+                        text-align: center;
                     }
                 }
                 .content-text {
@@ -104,70 +92,59 @@ main {
                     @include mainCon1TextP();
                     .content-text-p {
                         @include mainCon1Text(400, 16px, 20.08px, center, rgba(115, 123, 125, 1));
+                        text-align: center;
+                    }
+                }
+            }
+            .container-btn-synthetic {
+                @include size(275px, 40px);
+                display: flex;
+                gap: 24px;
+                .container-1-btn-1 {
+                    @include btn-1();
+                    @include size(135px, 40px);
+                    padding: 10px, 20px;
+                    cursor: pointer;
+                    span {
+                        @include size(95px, 18px);
+                        @include mainCon1Text(700, 14px, 17.57px, center, white);
+                    }
+                }
+                .container-1-btn-2 {
+                    @include btn-2();
+                    @include size(116px, 40px);
+                    padding: 10px, 20px;
+                    cursor: pointer;
+                    span {
+                        @include mainCon1Text(700, 14px, 17.57px, center, #3C64B1);
                     }
                 }
             }
         }
-        .container-btn-synthetic {
-            @include size(275px, 40px);
-            display: flex;
-            position: absolute;
-            top: 80%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            gap: 24px;
-            .container-1-btn-1 {
-                @include btn-1();
-                @include size(135px, 40px);
-                padding: 10px, 20px;
-                cursor: pointer;
-                span {
-                    @include size(95px, 18px);
-                    @include mainCon1Text(700, 14px, 17.57px, center, white);
-                }
-            }:hover {
-                transform: translateY(-5px);
-                background-color: none;
-                box-shadow: 0 10px 10px rgba(60, 100, 177, 1);
-                span {
-                    
-                box-shadow: none !important;
-                }
-            }
-            .container-1-btn-2 {
-                @include btn-2();
-                @include size(116px, 40px);
-                padding: 10px, 20px;
-                cursor: pointer;
-                span {
-                    @include mainCon1Text(700, 14px, 17.57px, center, #3C64B1);
-                }
-            }
-        }
         .container-1-bg {
+            @include size(1440px, 560px);
             background-image: url('../images/main/container-1/bg.jpeg');
             background-size: cover;
             background-position: center;
             color: rgba(60, 100, 177, 1);
             opacity: 0.08;
-            position: absolute;
-            @include size(1440px, 560px);
         }
     }
     .container-2 {
         @include size(1200px, 1712.33px);
+        @include disFlexCoCen();
         gap: 80px;
-        position: relative;
-        top: 60px;
         .container-2-1 {
             @include size(1200px,298.33px);
+            @include disFlexCoCen();
             gap: 60px;
-            margin: 0 auto;
+            margin: auto;
             .container-2-1-1 {
                 @include size(920px, 78px);
+                @include disFlexCoCen();
                 text-align: center;
                 gap: 20px;
-                margin: 0 auto;
+                margin: auto;
                 .container-2-1-title {
                     @include mainCon1Text(700, 30px, 37.65px, center, #373F41);
                     @include size(920px, 38px);
@@ -180,16 +157,14 @@ main {
             }
             .container-2-1-2 {
                 @include size(1080px, 160.33px);
-                display: flex;
-                margin-top: 50px;
+                @include disFlexRowBet();
                 gap: 40px;
                 .container-2-column {
                     @include size(333.33px, 157px);
+                    @include disFlexCoCen();
                     gap: 20px;
                     text-align: center;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
+                    @include disFlexCoCen();
                     .column-div-icon-text {
                         @include size(333.33px, 119px);
                         gap: 20px;
@@ -199,6 +174,7 @@ main {
                         }
                         .column-title-text {
                             @include size(350px, 69px);
+                            @include disFlexCoCen();
                             gap: 10px;
                             h4 {
                                 @include size(350px, 23px);
@@ -224,7 +200,7 @@ main {
         .container-2-2 {
             @include size(1200px, 420px);
             display: flex;
-            margin: 20px auto;
+            margin: auto;
             gap: 40px;
             img {
                 @include size(600px, 420px);
@@ -232,6 +208,7 @@ main {
             }
             .container-2-2-content {
                 @include size(560px, 320px);
+                margin: auto;
                 gap: 40px;
                 .content-title-text {
                     @include size(560px, 194px);
@@ -247,21 +224,19 @@ main {
                 }
                 .field {
                     @include size(560px, 86px);
+                    @include disFlexCoCen();
                     gap: 16px;
                     .form {
                         @include size(560px, 40px);
                         display: flex;
+                        flex-direction: row;
+                        justify-content: stretch;
                         gap: 20px;
                         input {
                             @include size(405px, 40px);
-                            padding: 0 20px;
-                            gap: 10px;
                             background-color: #F4F5F4;
+                            gap: 10px;
                             border: 0;
-                            ::placeholder {
-                                @include size(78px, 18px);
-                                @include mainCon2Text(600, 14px, 17.57px, #737B7D);
-                            }
                         }
                         button {
                             @include size(135px, 40px);
@@ -272,31 +247,23 @@ main {
                                 @include size(95px, 18px);
                                 @include mainCon1Text(700, 14px, 17.57px, center, #FFFFFF);
                             }
-                        }:hover {
-                            transform: translateY(-5px);
-                            background-color: none;
-                            box-shadow: 0 10px 10px rgba(60, 100, 177, 1);
-                            span {
-                                box-shadow: none !important;
-                            }
                         }
                     }
                     p {
                         @include size(560px, 30px);
                         @include mainCon2Text(600m, 12px, 15.06px, #737B7D);
-                        margin-top: 15px;
                     }
                 }
             }
         }
         .container-2-3 {
             @include size(1200px, 420px);
+            @include disFlexRowBet();
             gap: 40px;
-            display: flex;
-            margin: 50px auto;
+            margin: auto;
             .container-2-3-content {
                 @include size(560px, 284px);
-                margin: auto;
+                margin: auto 0;
                 gap: 60px;
                 h4 {
                     @include size(540px, 114px);
@@ -339,8 +306,7 @@ main {
         }
         .container-2-4 {
             @include size(1200px, 334px);
-            display: flex;
-            justify-content: space-between;
+            @include disFlexBet();
             margin: auto;
             .con-5-column {
                 @include size(240px, 334px);
@@ -350,8 +316,8 @@ main {
                 }
                 .con-5-column-content {
                     @include size(240px, 74px);
-                    gap: 15px;
                     text-align: center;
+                    gap: 15px;
                     h4 {
                         @include size(240px, 23px);
                         @include mainCon1Text(700, 18px, 22.59px, center, #373F41);
@@ -366,23 +332,25 @@ main {
     }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 992px) and (max-width: 1200px) {
     body {
-        @include size(768px, none);
+        @include size(100%, 100vh);
+        font-family: 'Mulish', sans-serif;
+        padding: 0, 0, 60px, 0;
     }
+
     header {
-        @include size(768px, 86px);
-        @include disFlexBet();
+        @include size(100%, 86px);
+        gap: 10px;
+        background-color: rgba(239, 243, 255, 1);
         position: sticky;
-        top: 0;
         .header {
-            @include size(100vw, 40px);
+            @include size(83.33%, 40px);
             @include disFlexBet();
             padding: 23px 0;
             align-items: center;
-            margin: 0 auto;
             .header-logo {
-                @include size(63.4px, 35.21px);
+                @include size(52.8px, 29.3px);
                 cursor: pointer;
             }
             .header-text-1 {
@@ -390,38 +358,24 @@ main {
                 @include disFlexBet();
                 gap: 30px;
                 p {
-                    @include headerText1();
-                    margin: 0;
+                    height: 18px;
+                    font-size: 18px;
                 }
             }
             .header-text-2 {
-                @include disFlexBet;
+                @include size(169px, 40px);
+                @include disFlexBet();
                 gap: 20px;
+                align-items: center;
                 .header-btn-login {
-                    @include size(107px, 40px);
-                    @include btn-2();
+                    @include size(42px, 18px);
+                    @include mainCon1Text(700, 14px, 17.57ox, center, rgba(60, 100, 177, 1));
                     cursor: pointer;
-                    background-color: rgb(239, 243, 255);
-                    border: none;
-                    margin: auto;
-                    padding: 10px, 20px;
-                    span {
-                        @include headerText2();
-                        @include size(42px, 18px);
-                    }
-                }:hover {
-                    transform: translateY(-5px);
-                    background-color: none;
-                    box-shadow: 0 10px 10px rgba(60, 100, 177, 1);
-                    span {
-                        
-                    box-shadow: none !important;
-                    }
                 }
                 .header-btn {
                     @include size(107px, 40px);
                     @include btn-1();
-                    padding: 10px, 20px, 10px, 20px;
+                    padding: 10px, 20px;
                     cursor: pointer;
                     span {
                         @include headerText2();
@@ -430,72 +384,61 @@ main {
             }
         }
     }
+
     main {
-        @include size(768px, none);
-        .container-1 {
-            display: flex;
-            flex-direction: columns;
-            @include size(768px, 560px);
-            .content-synthetic {
-                @include size(320px, 260px);
-                z-index: 1;
-                gap: 40px;
-                position: relative;
-                top: 150px;
-                left: 260px;
-                .content-synthetic-synthetic {
-                    @include size(400px, 180px);
-                    gap: 30px;
-                    position: relative;
-                    left: -20%;
-                    .content-content {
-                        @include size(400px, 110px);
-                        @include mainCon1TextP();
-                        .content-h3 {
-                            @include mainCon1Text(700, 44px, 55.22px, center, rgba(55, 63, 65, 1));
-                            font-size: 24px;
-                            text-align: center;
-                        }
+    @include size(100%, 2352.33px);
+    @include disFlexCoCen();
+    gap: 80px;
+    .container-1 {
+        @include size(100%, 560px);
+        @include disFlexCoCen();
+        .content-synthetic {
+            @include size(608.3px, 216.7px);
+            @include disFlexCoCen();
+            position: absolute;
+            top: 200px;
+            left: 180px;
+            gap: 40px;
+            margin: auto;
+            z-index: 1;
+            .content-synthetic-synthetic {
+                @include size(608.3px, 150px);
+                gap: 30px;
+                .content-content {
+                    @include size(608.3px, 91.7px);
+                    @include mainCon1TextP();
+                    margin-bottom: 20px;
+                    .content-h3 {
+                        @include mainCon1Text(700, 44px, 55.22px, center, rgba(55, 63, 65, 1));
+                        text-align: center;
                     }
-                    .content-text {
-                        @include size(400px, 40px);
-                        @include mainCon1TextP();
-                        .content-text-p {
-                            @include mainCon1Text(400, 16px, 20.08px, center, rgba(115, 123, 125, 1));
-                            font-size: 16px;
-                            text-align: center;
-                        }
+                }
+                .content-text {
+                    @include size(608.3p, 40px);
+                    @include mainCon1TextP();
+                    .content-text-p {
+                        @include mainCon1Text(400, 16px, 20.08px, center, rgba(115, 123, 125, 1));
+                        text-align: center;
                     }
                 }
             }
             .container-btn-synthetic {
-                @include size(275px, 40px);
+                @include size(229.2px, 40px);
                 display: flex;
-                position: absolute;
-                top: 110%;
-                left: 40%;
-                transform: translate(-50%, -50%);
                 gap: 24px;
                 .container-1-btn-1 {
                     @include btn-1();
-                    @include size(135px, 40px);
+                    @include size(112.5px, 40px);
                     padding: 10px, 20px;
                     cursor: pointer;
                     span {
                         @include size(95px, 18px);
                         @include mainCon1Text(700, 14px, 17.57px, center, white);
                     }
-                }:hover {
-                    transform: translateY(-5px);
-                    background-color: none;
-                    box-shadow: 0 10px 10px rgba(60, 100, 177, 1);
-                    span {
-                    box-shadow: none !important;
-                    }
                 }
                 .container-1-btn-2 {
                     @include btn-2();
-                    @include size(116px, 40px);
+                    @include size(96.7px, 40px);
                     padding: 10px, 20px;
                     cursor: pointer;
                     span {
@@ -503,54 +446,707 @@ main {
                     }
                 }
             }
+        }
+        .container-1-bg {
+            @include size(100%, 560px);
+            background-image: url('../images/main/container-1/bg.jpeg');
+            background-size: cover;
+            background-position: center;
+            color: rgba(60, 100, 177, 1);
+            opacity: 0.08;
+        }
+    }
+    .container-2 {
+        @include size(83.33%, 1712.33px);
+        @include disFlexCoCen();
+        .container-2-1 {
+            @include size(100%,298.33px);
+            @include disFlexCoCen();
+            gap: 60px;
+            margin: auto;
+            .container-2-1-1 {
+                @include size(100%, 78px);
+                @include disFlexCoCen();
+                text-align: center;
+                gap: 20px;
+                margin: auto;
+                .container-2-1-title {
+                    @include mainCon1Text(700, 30px, 37.65px, center, #373F41);
+                    @include size(100%, 38px);
+                    margin-bottom: 20px;
+                }
+                .container-2-1-text {
+                    @include mainCon1Text(400, 16px, 20.08px, center, #737B7D);
+                    @include size(100%, 20px);
+                }
+            }
+            .container-2-1-2 {
+                @include size(83.33%, 160.33px);
+                @include disFlexRowBet();
+                gap: 40px;
+                .container-2-column {
+                    @include size(221.5px, 157px);
+                    @include disFlexCoCen();
+                    gap: 20px;
+                    text-align: center;
+                    @include disFlexCoCen();
+                    .column-div-icon-text {
+                        @include size(221.5px, 119px);
+                        @include disFlexCoCen();
+                        gap: 20px;
+                        img {
+                            @include size(30px, 30px);
+                            margin-bottom: 10px;
+                        }
+                        .column-title-text {
+                            @include size(221.5px, 69px);
+                            @include disFlexCoCen();
+                            gap: 10px;
+                            h4 {
+                                @include size(221.5px, 23px);
+                                @include mainCon1Text(700, 18px, 22.59px, center, #373F41);
+                            }
+                            p {
+                                @include size(221.5px, 36px);
+                                @include mainCon1Text(400, 14px, 17.57px, center, #373F41);
+                            }
+                        }
+                    }
+                    .column-div-textual {
+                        @include size(58px, 18px);
+                        margin-top: 20px;
+                        gap: 10px;
+                        p {
+                            @include size(58px, 18px);
+                            @include mainCon1Text(700, 14px, 17.57px, center, #3C64B1);
+                        }
+                    }
+                }
+            }
+        }
+        .container-2-2 {
+            @include size(100%, 420px);
+            display: flex;
+            margin: auto;
+            img {
+                @include size(500px, 350px);
+                background-color: #D9D9D9;
+            }
+            .container-2-2-content {
+                @include size(303.3px, 320px);
+                .content-title-text {
+                    @include size(303.3px, 194px);
+                    margin-bottom: 20px;
+                    h4 {
+                        @include size(303.3px, 114px);
+                        @include mainCon2Text(700, 24px, 37.65px, #373F41);
+                        margin-bottom: 30px
+                    }
+                    p {
+                        @include size(303.3px, 60px);
+                        @include mainCon2Text(400, 10px, 20.08px, #737B7D);
+                    }
+                }
+                .field {
+                    @include size(303.3px, 86px);
+                    @include disFlexCoCen();
+                    gap: 5px;
+                    .form {
+                        @include size(303.3px, 40px);
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: stretch;
+                        gap: 6px;
+                        input {
+                            @include size(180px, 40px);
+                            background-color: #F4F5F4;
+                            gap: 10px;
+                            border: 0;
+                        }
+                        button {
+                            @include size(100px, 40px);
+                            @include btn-1();
+                            padding: 10px, 20px;
+                            cursor: pointer;
+                            span {
+                                @include size(95px, 18px);
+                                @include mainCon1Text(700, 14px, 17.57px, center, #FFFFFF);
+                            }
+                        }
+                    }
+                    p {
+                        @include size(293.3px, 30px);
+                        @include mainCon2Text(600m, 12px, 15.06px, #737B7D);
+                    }
+                }
+            }
+        }
+        .container-2-3 {
+            @include size(100%, 420px);
+            @include disFlexRowBet();
+            gap: 40px;
+            margin: auto;
+            .container-2-3-content {
+                @include size(350px, 284px);
+                margin: auto 0;
+                gap: 60px;
+                h4 {
+                    @include size(450px, 114px);
+                    @include mainCon2Text(700, 30px, 37.65px, #373F41);
+                    margin-bottom: 30px;
+                }
+                .container-2-3-column {
+                    @include size(466.7px, 110px);
+                    gap: 30px;
+                    display: flex;
+                    .left {
+                        @include size(212.5px, 110px);
+                        gap: 20px;
+                        img {
+                            @include size(26.9px, 30px);
+                        }
+                        p {
+                            @include size(200px, 60px);
+                            @include mainCon2Text(400, 16px, 20.08px, #737B7D);
+                        }
+                    }
+                    .right {
+                        @include size(212.5px, 110px);
+                        gap: 20px;
+                        img {
+                            @include size(36.67px, 30px);
+                        }
+                        p {
+                            @include size(200px, 60px);
+                            @include mainCon2Text(400, 16px, 20.08px, #737B7D);
+                        }
+                    }
+                }
+            }
+            img{
+                @include size(400px, 280px);
+                background-repeat: no-repeat;
+                background-position: center center;
+            }
+        }
+        .container-2-4 {
+            @include size(100%, 334px);
+            @include disFlexBet();
+            margin: auto;
+            .con-5-column {
+                @include size(188.3px, 334px);
+                gap: 20px;
+                img {
+                    @include size(188.3px, 188.3px);
+                }
+                .con-5-column-content {
+                    @include size(188.3px, 74px);
+                    text-align: center;
+                    gap: 15px;
+                    h4 {
+                        @include size(188.3px, 23px);
+                        @include mainCon1Text(700, 18px, 22.59px, center, #373F41);
+                    }
+                    p {
+                        @include size(188.3px, 36px);
+                        @include mainCon1Text(400, 14px, 17.57px, center, #373F41);
+                    }
+                }
+            }
+        }
+    }
+}
+}
+
+@media (min-width: 600px) and (max-width: 991px) {
+    body {
+        font-family: 'Mulish', sans-serif;
+        padding: 0, 0, 60px, 0;
+        @include size(100%, 100vh);
+    }
+
+    header {
+        @include size(100%, 86px);
+        gap: 10px;
+        background-color: rgba(239, 243, 255, 1);
+        position: sticky;
+        .header {
+            @include size(83.33%, 40px);
+            @include disFlexBet();
+            padding: 23px 0;
+            align-items: center;
+            .header-logo {
+                @include size(43.7px, 24.3px);
+                cursor: pointer;
+            }
+            .header-text-1 {
+                @include size(148.3px, 16px);
+                @include disFlexBet();
+                gap: 15px;
+                p {
+                    height: 16px;
+                    font-size: 16px;
+                }
+            }
+            .header-text-2 {
+                @include size(116.5px, 40px);
+                @include disFlexBet();
+                align-items: center;
+                gap: 10px;
+                .header-btn-login {
+                    @include size(50px, 18px);
+                    @include mainCon1Text(700, 14px, 17.57ox, center, rgba(60, 100, 177, 1));
+                    cursor: pointer;
+                }
+                .header-btn {
+                    @include size(73.8px, 40px);
+                    @include btn-1();
+                    padding: 10px, 20px;
+                    cursor: pointer;
+                    span {
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+
+    main {
+        @include size(100%, 2352.33px);
+        @include disFlexCoCen();
+        gap: 80px;
+        .container-1 {
+            @include size(100%, 560px);
+            @include disFlexCoCen();
+            .content-synthetic {
+                @include size(503.4px, 260px);
+                @include disFlexCoCen();
+                position: absolute;
+                top: 220px;
+                left: 240px;
+                gap: 40px;
+                margin: auto;
+                z-index: 1;
+                .content-synthetic-synthetic {
+                    @include size(503.4px, 180px);
+                    margin-bottom: 30px;
+                    gap: 30px;
+                    .content-content {
+                        @include size(503.4px, 110px);
+                        @include mainCon1TextP();
+                        margin-bottom: 60px;
+                        .content-h3 {
+                            @include mainCon1Text(700, 44px, 55.22px, center, rgba(55, 63, 65, 1));
+                            text-align: center;
+                        }
+                    }
+                    .content-text {
+                        @include size(503.4px, 40px);
+                        @include mainCon1TextP();
+                        .content-text-p {
+                            @include mainCon1Text(400, 16px, 20.08px, center, rgba(115, 123, 125, 1));
+                            text-align: center;
+                        }
+                    }
+                }
+                .container-btn-synthetic {
+                    @include size(275px, 40px);
+                    display: flex;
+                    gap: 24px;
+                    .container-1-btn-1 {
+                        @include btn-1();
+                        @include size(135px, 40px);
+                        padding: 10px, 20px;
+                        cursor: pointer;
+                        span {
+                            @include size(95px, 18px);
+                            @include mainCon1Text(700, 14px, 17.57px, center, white);
+                        }
+                    }
+                    .container-1-btn-2 {
+                        @include btn-2();
+                        @include size(116px, 40px);
+                        padding: 10px, 20px;
+                        cursor: pointer;
+                        span {
+                            @include mainCon1Text(700, 14px, 17.57px, center, #3C64B1);
+                        }
+                    }
+                }
+            }
             .container-1-bg {
+                @include size(100%, 560px);
                 background-image: url('../images/main/container-1/bg.jpeg');
                 background-size: cover;
                 background-position: center;
                 color: rgba(60, 100, 177, 1);
                 opacity: 0.08;
-                position: absolute;
-                @include size(768px, 560px);
             }
         }
         .container-2 {
-            @include size(320px, none);
+            @include size(100%, 1712.33px);
+            @include disFlexCoCen();
             gap: 80px;
-            position: relative;
-            top: 60px;
             .container-2-1 {
-                @include size(320px,none);
+                @include size(83.33%,298.33px);
+                @include disFlexCoCen();
                 gap: 60px;
                 margin: auto;
                 .container-2-1-1 {
-                    @include size(320px, none);
+                    @include size(100%, 78px);
+                    @include disFlexCoCen();
                     text-align: center;
                     gap: 20px;
                     margin: auto;
                     .container-2-1-title {
-                        @include mainCon1Text(700, 24px, 37.65px, center, #373F41);
-                        @include size(320px, none);
-                        margin-bottom: 10px;
+                        @include mainCon1Text(700, 30px, 37.65px, center, #373F41);
+                        @include size(100%, 38px);
+                        margin-bottom: 20px;
                     }
                     .container-2-1-text {
-                        @include mainCon1Text(400, 14px, 20.08px, center, #737B7D);
-                        @include size(320px, none);
+                        @include mainCon1Text(400, 16px, 20.08px, center, #737B7D);
+                        @include size(100%, 20px);
                     }
                 }
                 .container-2-1-2 {
-                    @include size(320px, none);
-                    display: flex;
-                    flex-direction: column;
-                    margin: 15px auto 0 auto;
+                    @include size(100%, 160.33px);
+                    @include disFlexRowBet();
                     gap: 40px;
                     .container-2-column {
-                        @include size(80vw, none);
+                        @include size(100%, 157px);
+                        @include disFlexCoCen();
                         gap: 20px;
+                        text-align: center;
+                        @include disFlexCoCen();
+                        .column-div-icon-text {
+                            @include size(30%, 119px);
+                            gap: 20px;
+                            img {
+                                @include size(30px, 30px);
+                                margin-bottom: 10px;
+                            }
+                            .column-title-text {
+                                @include size(100%, 69px);
+                                @include disFlexCoCen();
+                                gap: 10px;
+                                h4 {
+                                    @include size(250px, 23px);
+                                    @include mainCon1Text(700, 18px, 22.59px, center, #373F41);
+                                }
+                                p {
+                                    @include size(250px, 36px);
+                                    @include mainCon1Text(400, 14px, 17.57px, center, #373F41);
+                                }
+                            }
+                        }
+                        .column-div-textual {
+                            @include size(58px, 18px);
+                            gap: 10px;
+                            p {
+                                @include size(58px, 18px);
+                                @include mainCon1Text(700, 14px, 17.57px, center, #3C64B1);
+                            }
+                        }
+                    }
+                }
+            }
+            .container-2-2 {
+                @include size(100%, 420px);
+                display: flex;
+                margin: auto;
+                gap: 40px;
+                img {
+                    @include size(413.8px, 289.6px);
+                    background-color: #D9D9D9;
+                }
+                .container-2-2-content {
+                    @include size(450px, 320px);
+                    margin: auto;
+                    gap: 40px;
+                    .content-title-text {
+                        @include size(430px, 194px);
+                        gap: 20px;
+                        h4 {
+                            @include size(430px, 114px);
+                            @include mainCon2Text(700, 24px, 37.65px, #373F41);
+                        }
+                        p {
+                            @include size(430px, 60px);
+                            @include mainCon2Text(400, 14px, 20.08px, #737B7D);
+                        }
+                    }
+                    .field {
+                        @include size(450px, 86px);
+                        @include disFlexCoCen();
+                        gap: 16px;
+                        .form {
+                            @include size(450px, 40px);
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: stretch;
+                            gap: 20px;
+                            input {
+                                @include size(240px, 40px);
+                                background-color: #F4F5F4;
+                                gap: 10px;
+                                border: 0;
+                            }
+                            button {
+                                @include size(180px, 40px);
+                                @include btn-1();
+                                padding: 10px, 20px;
+                                cursor: pointer;
+                                span {
+                                    @include size(95px, 18px);
+                                    @include mainCon1Text(700, 14px, 17.57px, center, #FFFFFF);
+                                }
+                            }
+                        }
+                        p {
+                            @include size(450px, 30px);
+                            @include mainCon2Text(600m, 12px, 15.06px, #737B7D);
+                        }
+                    }
+                }
+            }
+            .container-2-3 {
+                @include size(100%, 420px);
+                @include disFlexRowBet();
+                gap: 40px;
+                margin: auto;
+                .container-2-3-content {
+                    @include size(450px, 284px);
+                    margin: auto 0;
+                    gap: 60px;
+                    h4 {
+                        @include size(450px, 114px);
+                        @include mainCon2Text(700, 30px, 37.65px, #373F41);
+                        margin-bottom: 30px;
+                    }
+                    .container-2-3-column {
+                        @include size(450px, 110px);
+                        gap: 30px;
                         display: flex;
-                        flex-direction: column;
-                        align-items: center;
-                        position: relative;
-                        left: 100px;
+                        .left {
+                            @include size(210px, 110px);
+                            gap: 20px;
+                            img {
+                                @include size(26.9px, 30px);
+                            }
+                            p {
+                                @include size(210px, 60px);
+                                @include mainCon2Text(400, 16px, 20.08px, #737B7D);
+                            }
+                        }
+                        .right {
+                            @include size(210px, 110px);
+                            gap: 20px;
+                            img {
+                                @include size(36.67px, 30px);
+                            }
+                            p {
+                                @include size(210px, 60px);
+                                @include mainCon2Text(400, 16px, 20.08px, #737B7D);
+                            }
+                        }
+                    }
+                }
+                img{
+                    @include size(413.8px, 289.6px);
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                }
+            }
+            .container-2-4 {
+                @include size(100%, 334px);
+                @include disFlexBet();
+                margin: auto;
+                .con-5-column {
+                    @include size(220px, 334px);
+                    gap: 20px;
+                    img {
+                        @include size(220px, 220px);
+                    }
+                    .con-5-column-content {
+                        @include size(220px, 74px);
+                        text-align: center;
+                        gap: 15px;
+                        h4 {
+                            @include size(220px, 23px);
+                            @include mainCon1Text(700, 18px, 22.59px, center, #373F41);
+                        }
+                        p {
+                            @include size(220px, 36px);
+                            @include mainCon1Text(400, 14px, 17.57px, center, #373F41);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 320px) and (max-width: 599px) {
+    body {
+        font-family: 'Mulish', sans-serif;
+        padding: 0, 0, 60px, 0;
+        @include size(100%, 100vh);
+    }
+
+    header {
+        @include size(100%, 86px);
+        gap: 50px;
+        background-color: rgba(239, 243, 255, 1);
+        position: sticky;
+        .header {
+            @include size(83.33%, 40px);
+            @include disFlexBet();
+            align-items: center;
+            margin: 0 auto;
+            .header-logo {
+                @include size(29.6px, 16.5px);
+                cursor: pointer;
+            }
+            .header-text-1 {
+                @include size(100.5px, 18px);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 5px;
+                p {
+                    height: 14px;
+                    font-size: 14px;
+                }
+            }
+            .header-text-2 {
+                @include size(79px, 40px);
+                @include disFlexCoCen();
+                align-items: center;
+                gap: 5px;
+                .header-btn-login {
+                    @include size(42px, 18px);
+                    @include mainCon1Text(700, 14px, 17.57px, center, rgba(60, 100, 177, 1));
+                    cursor: pointer;
+                }
+                .header-btn {
+                    @include size(50px, 40px);
+                    @include btn-1();
+                    cursor: pointer;
+                    span {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+
+    main {
+        @include size(100%, 2352.33px);
+        @include disFlexCoCen();
+        gap: 80px;
+        .container-1 {
+            @include size(1440px, 560px);
+            @include disFlexCoCen();
+            .content-synthetic {
+                @include size(730px, 260px);
+                @include disFlexCoCen();
+                position: absolute;
+                top: 150px;
+                left: 355px;
+                gap: 40px;
+                margin: auto;
+                z-index: 1;
+                .content-synthetic-synthetic {
+                    @include size(730px, 180px);
+                    gap: 30px;
+                    .content-content {
+                        @include size(730px, 110px);
+                        @include mainCon1TextP();
+                        margin-bottom: 20px;
+                        .content-h3 {
+                            @include mainCon1Text(700, 44px, 55.22px, center, rgba(55, 63, 65, 1));
+                            text-align: center;
+                        }
+                    }
+                    .content-text {
+                        @include size(730px, 40px);
+                        @include mainCon1TextP();
+                        .content-text-p {
+                            @include mainCon1Text(400, 16px, 20.08px, center, rgba(115, 123, 125, 1));
+                            text-align: center;
+                        }
+                    }
+                }
+                .container-btn-synthetic {
+                    @include size(275px, 40px);
+                    display: flex;
+                    gap: 24px;
+                    .container-1-btn-1 {
+                        @include btn-1();
+                        @include size(135px, 40px);
+                        padding: 10px, 20px;
+                        cursor: pointer;
+                        span {
+                            @include size(95px, 18px);
+                            @include mainCon1Text(700, 14px, 17.57px, center, white);
+                        }
+                    }
+                    .container-1-btn-2 {
+                        @include btn-2();
+                        @include size(116px, 40px);
+                        padding: 10px, 20px;
+                        cursor: pointer;
+                        span {
+                            @include mainCon1Text(700, 14px, 17.57px, center, #3C64B1);
+                        }
+                    }
+                }
+            }
+            .container-1-bg {
+                @include size(1440px, 560px);
+                background-image: url('../images/main/container-1/bg.jpeg');
+                background-size: cover;
+                background-position: center;
+                color: rgba(60, 100, 177, 1);
+                opacity: 0.08;
+            }
+        }
+        .container-2 {
+            @include size(1200px, 1712.33px);
+            @include disFlexCoCen();
+            gap: 80px;
+            .container-2-1 {
+                @include size(1200px,298.33px);
+                @include disFlexCoCen();
+                gap: 60px;
+                margin: auto;
+                .container-2-1-1 {
+                    @include size(920px, 78px);
+                    @include disFlexCoCen();
+                    text-align: center;
+                    gap: 20px;
+                    margin: auto;
+                    .container-2-1-title {
+                        @include mainCon1Text(700, 30px, 37.65px, center, #373F41);
+                        @include size(920px, 38px);
+                        margin-bottom: 20px;
+                    }
+                    .container-2-1-text {
+                        @include mainCon1Text(400, 16px, 20.08px, center, #737B7D);
+                        @include size(920px, 20px);
+                    }
+                }
+                .container-2-1-2 {
+                    @include size(1080px, 160.33px);
+                    @include disFlexRowBet();
+                    gap: 40px;
+                    .container-2-column {
+                        @include size(333.33px, 157px);
+                        @include disFlexCoCen();
+                        gap: 20px;
+                        text-align: center;
+                        @include disFlexCoCen();
                         .column-div-icon-text {
                             @include size(333.33px, 119px);
                             gap: 20px;
@@ -560,6 +1156,7 @@ main {
                             }
                             .column-title-text {
                                 @include size(350px, 69px);
+                                @include disFlexCoCen();
                                 gap: 10px;
                                 h4 {
                                     @include size(350px, 23px);
@@ -583,53 +1180,48 @@ main {
                 }
             }
             .container-2-2 {
-                @include size(320px, none);
+                @include size(1200px, 420px);
                 display: flex;
                 margin: auto;
                 gap: 40px;
-                position: relative;
-                top: 450px;
-                right: 1px;
                 img {
-                    @include size(400px, 280px);
+                    @include size(600px, 420px);
                     background-color: #D9D9D9;
                 }
                 .container-2-2-content {
-                    @include size(300px, none);
+                    @include size(560px, 320px);
+                    margin: auto;
                     gap: 40px;
                     .content-title-text {
-                        @include size(300px, none);
+                        @include size(560px, 194px);
                         gap: 20px;
                         h4 {
-                            @include size(300px, none);
-                            @include mainCon2Text(700, 22px, 37.65px, #373F41);
+                            @include size(540px, 114px);
+                            @include mainCon2Text(700, 30px, 37.65px, #373F41);
                         }
                         p {
-                            @include size(300px, 60px);
+                            @include size(540px, 60px);
                             @include mainCon2Text(400, 16px, 20.08px, #737B7D);
                         }
                     }
                     .field {
-                        @include size(300px, 86px);
+                        @include size(560px, 86px);
+                        @include disFlexCoCen();
                         gap: 16px;
                         .form {
-                            @include size(300px, 40px);
+                            @include size(560px, 40px);
                             display: flex;
+                            flex-direction: row;
+                            justify-content: stretch;
                             gap: 20px;
-                            margin-top: 40px;
                             input {
-                                @include size(200px, 35px);
-                                padding: 0 20px;
-                                gap: 10px;
+                                @include size(405px, 40px);
                                 background-color: #F4F5F4;
+                                gap: 10px;
                                 border: 0;
-                                ::placeholder {
-                                    @include size(78px, 18px);
-                                    @include mainCon2Text(600, 14px, 17.57px, #737B7D);
-                                }
                             }
                             button {
-                                @include size(140px, 35px);
+                                @include size(135px, 40px);
                                 @include btn-1();
                                 padding: 10px, 20px;
                                 cursor: pointer;
@@ -637,35 +1229,23 @@ main {
                                     @include size(95px, 18px);
                                     @include mainCon1Text(700, 14px, 17.57px, center, #FFFFFF);
                                 }
-                            }:hover {
-                                transform: translateY(-5px);
-                                background-color: none;
-                                box-shadow: 0 10px 10px rgba(60, 100, 177, 1);
-                                span {
-                                    box-shadow: none !important;
-                                }
                             }
                         }
                         p {
-                            @include size(300px, none);
+                            @include size(560px, 30px);
                             @include mainCon2Text(600m, 12px, 15.06px, #737B7D);
-                            margin-top: 15px;
                         }
                     }
                 }
             }
             .container-2-3 {
-                @include size(320px, none);
+                @include size(1200px, 420px);
+                @include disFlexRowBet();
                 gap: 40px;
-                display: flex;
-                flex-direction: column;
-                margin: 50px auto;
-                text-align: center;
-                position: relative;
-                top: 16%;
+                margin: auto;
                 .container-2-3-content {
                     @include size(560px, 284px);
-                    margin: auto;
+                    margin: auto 0;
                     gap: 60px;
                     h4 {
                         @include size(540px, 114px);
@@ -673,7 +1253,7 @@ main {
                         margin-bottom: 30px;
                     }
                     .container-2-3-column {
-                        @include size(300px, none);
+                        @include size(560px, 110px);
                         gap: 30px;
                         display: flex;
                         .left {
@@ -681,13 +1261,10 @@ main {
                             gap: 20px;
                             img {
                                 @include size(26.9px, 30px);
-                                position: relative;
-                                left: -30%;
                             }
                             p {
                                 @include size(255px, 60px);
                                 @include mainCon2Text(400, 16px, 20.08px, #737B7D);
-                                text-align: left
                             }
                         }
                         .right {
@@ -695,461 +1272,41 @@ main {
                             gap: 20px;
                             img {
                                 @include size(36.67px, 30px);
-                                position: relative;
-                                left: -30%;
                             }
                             p {
                                 @include size(255px, 60px);
                                 @include mainCon2Text(400, 16px, 20.08px, #737B7D);
-                                text-align: left
                             }
                         }
                     }
                 }
                 img{
-                    @include size(400px, 280px);
+                    @include size(600px, 420px);
                     background-repeat: no-repeat;
                     background-position: center center;
-                    position: relative;
-                    left: 25%;
                 }
             }
             .container-2-4 {
-                @include size(320px, none);
-                display: flex;
-                justify-content: space-between;
-                position: relative;
-                top: 550px;
-                margin: auto;
-                .con-5-column {
-                    @include size(20%, none);
-                    gap: 20px;
-                    img {
-                        @include size(120px, 120px);
-                        position: relative;
-                        left: 10%;
-                    }
-                    .con-5-column-content {
-                        @include size(80px, 74px);
-                        gap: 15px;
-                        text-align: center;
-                        h4 {
-                            @include size(150px, 23px);
-                            @include mainCon1Text(700, 16px, 22.59px, center, #373F41);
-                        }
-                        p {
-                            @include size(150px, 36px);
-                            @include mainCon1Text(400, 14px, 17.57px, center, #373F41);
-                            margin-top: 25px;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
-@media (max-width: 320px) {
-    body {
-        @include size(320px, none);
-    }
-    header {
-        @include size(320px, 60px);
-        @include disFlexBet();
-        position: sticky;
-        top: 0;
-        .header {
-            @include size(100vw, 15px);
-            @include disFlexBet();
-            padding: 20px 0;
-            align-items: center;
-            margin: 0 auto;
-            .header-logo {
-                @include size(31.7px, 35.21px);
-                cursor: pointer;
-                img {
-                    @include size(31.7px, 35.21px);
-                }
-            }
-            .header-text-1 {
-                @include size(215px, 18px);
+                @include size(1200px, 334px);
                 @include disFlexBet();
-                gap: 30px;
-                position: absolute;
-                top: 7px;
-                left: 50px;
-                p {
-                    font-size: 10px;
-                    margin: 0;
-                }
-            }
-            .header-text-2 {
-                @include disFlexBet;
-                gap: 20px;
-                position: relative;
-                top: 10px;
-                right: 80px;
-                .header-btn-login {
-                    @include size(80px, 20px);
-                    @include btn-2();
-                    cursor: pointer;
-                    background-color: rgb(239, 243, 255);
-                    border: none;
-                    margin: auto;
-                    padding: 5px, 10px;
-                    span {
-                        @include size(42px, 18px);
-                        font-weight: 300;
-                    }
-                }:hover {
-                    transform: translateY(-5px);
-                    background-color: none;
-                    box-shadow: 0 10px 10px rgba(60, 100, 177, 1);
-                    span {
-                        
-                    box-shadow: none !important;
-                    }
-                }
-                .header-btn {
-                    @include size(80px, 20px);
-                    @include btn-1();
-                    padding: 5px, 10px;
-                    cursor: pointer;
-                    span {
-                        font-weight: 300;
-                    }
-                }
-            }
-        }
-    }
-    main {
-        @include size(320px, none);
-        .container-1 {
-            display: flex;
-            flex-direction: columns;
-            @include size(320px, 560px);
-            .content-synthetic {
-                @include size(160px, 260px);
-                z-index: 1;
-                gap: 40px;
-                position: relative;
-                top: 10px;
-                left: 30px;
-                .content-synthetic-synthetic {
-                    @include size(300px, 180px);
-                    gap: 30px;
-                    .content-content {
-                        @include size(300px, 110px);
-                        @include mainCon1TextP();
-                        .content-h3 {
-                            @include mainCon1Text(700, 24px, 55.22px, center, rgba(55, 63, 65, 1));
-                            text-align: center;
-                        }
-                    }
-                    .content-text {
-                        @include size(300px, 40px);
-                        @include mainCon1TextP();
-                        .content-text-p {
-                            @include mainCon1Text(400, 16px, 20.08px, center, rgba(115, 123, 125, 1));
-                            font-size: 16px;
-                            text-align: center;
-                            position: relative;
-                            top: 50px;
-                        }
-                    }
-                }
-            }
-            .container-btn-synthetic {
-                @include size(275px, 40px);
-                display: flex;
-                position: absolute;
-                top: 110%;
-                left: 80%;
-                transform: translate(-50%, -50%);
-                gap: 24px;
-                .container-1-btn-1 {
-                    @include btn-1();
-                    @include size(135px, 40px);
-                    padding: 10px, 20px;
-                    cursor: pointer;
-                    span {
-                        @include size(95px, 18px);
-                        @include mainCon1Text(700, 14px, 17.57px, center, white);
-                    }
-                }:hover {
-                    transform: translateY(-5px);
-                    background-color: none;
-                    box-shadow: 0 10px 10px rgba(60, 100, 177, 1);
-                    span {
-                    box-shadow: none !important;
-                    }
-                }
-                .container-1-btn-2 {
-                    @include btn-2();
-                    @include size(116px, 40px);
-                    padding: 10px, 20px;
-                    cursor: pointer;
-                    span {
-                        @include mainCon1Text(700, 14px, 17.57px, center, #3C64B1);
-                    }
-                }
-            }
-            .container-1-bg {
-                background-image: url('../images/main/container-1/bg.jpeg');
-                background-size: cover;
-                background-position: center;
-                color: rgba(60, 100, 177, 1);
-                opacity: 0.08;
-                position: absolute;
-                @include size(320px, 443px);
-            }
-        }
-        .container-2 {
-            @include size(320px, none);
-            gap: 80px;
-            position: relative;
-            top: 120px;
-            .container-2-1 {
-                @include size(320px,none);
-                gap: 60px;
                 margin: auto;
-                .container-2-1-1 {
-                    @include size(320px, none);
-                    text-align: center;
-                    gap: 20px;
-                    margin: auto;
-                    .container-2-1-title {
-                        @include mainCon1Text(700, 18px, 37.65px, center, #373F41);
-                        @include size(320px, none);
-                        margin-bottom: 10px;
-                    }
-                    .container-2-1-text {
-                        @include mainCon1Text(400, 14px, 20.08px, center, #737B7D);
-                        @include size(300px, none);
-                        position: relative;
-                        left: 8px;
-                        margin-top: 40px;
-                    }
-                }
-                .container-2-1-2 {
-                    @include size(320px, none);
-                    display: flex;
-                    flex-direction: column;
-                    margin: 60px auto 0 auto;
-                    gap: 40px;
-                    .container-2-column {
-                        @include size(300px, none);
-                        gap: 20px;
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
-                        position: relative;
-                        left: 20px;
-                        .column-div-icon-text {
-                            @include size(300px, 119px);
-                            gap: 20px;
-                            img {
-                                @include size(30px, 30px);
-                                margin-bottom: 10px;
-                            }
-                            .column-title-text {
-                                @include size(280px, 69px);
-                                gap: 10px;
-                                text-align: center;
-                                h4 {
-                                    @include size(280px, 23px);
-                                    @include mainCon1Text(700, 18px, 22.59px, center, #373F41);
-                                }
-                                p {
-                                    @include size(280px, 36px);
-                                    @include mainCon1Text(400, 14px, 17.57px, center, #373F41);
-                                }
-                            }
-                        }
-                        .column-div-textual {
-                            @include size(58px, 18px);
-                            gap: 10px;
-                            p {
-                                @include size(58px, 18px);
-                                @include mainCon1Text(700, 14px, 17.57px, center, #3C64B1);
-                            }
-                        }
-                    }
-                }
-            }
-            .container-2-2 {
-                @include size(320px, none);
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                position: relative;
-                right: 10px;
-                margin: auto;
-                gap: 40px;
-                img {
-                    @include size(200px, 140px);
-                    background-color: #D9D9D9;
-
-                }
-                .container-2-2-content {
-                    @include size(300px, none);
-                    gap: 40px;
-                    .content-title-text {
-                        @include size(300px, none);
-                        gap: 20px;
-                        h4 {
-                            @include size(300px, none);
-                            @include mainCon2Text(700, 18px, 37.65px, #373F41);
-                        }
-                        p {
-                            @include size(300px, 60px);
-                            @include mainCon2Text(400, 12px, 20.08px, #737B7D);
-                        }
-                    }
-                    .field {
-                        @include size(300px, 86px);
-                        gap: 16px;
-                        .form {
-                            @include size(300px, 40px);
-                            display: flex;
-                            gap: 20px;
-                            margin-top: 40px;
-                            input {
-                                @include size(200px, 35px);
-                                padding: 0 20px;
-                                gap: 10px;
-                                background-color: #F4F5F4;
-                                border: 0;
-                                ::placeholder {
-                                    @include size(78px, 18px);
-                                    @include mainCon2Text(600, 14px, 17.57px, #737B7D);
-                                }
-                            }
-                            button {
-                                @include size(140px, 35px);
-                                @include btn-1();
-                                padding: 10px, 20px;
-                                cursor: pointer;
-                                span {
-                                    @include size(95px, 18px);
-                                    @include mainCon1Text(700, 12px, 17.57px, center, #FFFFFF);
-                                }
-                            }:hover {
-                                transform: translateY(-5px);
-                                background-color: none;
-                                box-shadow: 0 10px 10px rgba(60, 100, 177, 1);
-                                span {
-                                    box-shadow: none !important;
-                                }
-                            }
-                        }
-                        p {
-                            @include size(300px, none);
-                            @include mainCon2Text(600, 12px, 15.06px, #737B7D);
-                            margin-top: 15px;
-                        }
-                    }
-                }
-            }
-            .container-2-3 {
-                @include size(320px, none);
-                gap: 40px;
-                display: flex;
-                flex-direction: column;
-                margin: 50px auto;
-                text-align: center;
-                position: relative;
-                top: 23.5%;
-                .container-2-3-content {
-                    @include size(300px, 284px);
-                    margin: auto;
-                    gap: 60px;
-                    h4 {
-                        @include size(300px, 114px);
-                        @include mainCon2Text(700, 20px, 37.65px, #373F41);
-                        margin-bottom: 30px;
-                    }
-                    .container-2-3-column {
-                        @include size(300px, none);
-                        gap: 30px;
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
-                        position: relative;
-                        left: 20px;
-                        .left {
-                            @include size(255px, 110px);
-                            gap: 20px;
-                            img {
-                                @include size(26.9px, 30px);
-                                position: relative;
-                                left: -30%;
-                                top: 5px;
-                            }
-                            p {
-                                @include size(255px, 60px);
-                                @include mainCon2Text(400, 14px, 20.08px, #737B7D);
-                                text-align: left;
-                            }
-                        }
-                        .right {
-                            @include size(255px, 110px);
-                            gap: 20px;
-                            img {
-                                @include size(36.67px, 30px);
-                                position: relative;
-                                left: -30%;
-                                top: 5px;
-                            }
-                            p {
-                                @include size(255px, 60px);
-                                @include mainCon2Text(400, 14px, 20.08px, #737B7D);
-                                text-align: left;
-                            }
-                        }
-                    }
-                }
-                img{
-                    @include size(200px, 140px);
-                    background-repeat: no-repeat;
-                    background-position: center center;
-                    position: relative;
-                    left: 25%;
-                    top: 25%;
-                }
-            }
-            .container-2-4 {
-                @include size(320px, none);
-                display: flex;
-                justify-content: space-between;
-                flex-direction: row;
-                flex-wrap: wrap;
-                position: relative;
-                top: 700px;
                 .con-5-column {
-                    @include size(45%, none);
-                    margin-bottom: auto;
-                    padding: auto 10px;
+                    @include size(240px, 334px);
                     gap: 20px;
                     img {
-                        @include size(120px, 120px);
-                        position: relative;
-                        left: 10%;
+                        @include size(240px, 240px);
                     }
                     .con-5-column-content {
-                        @include size(50px, 74px);
-                        gap: 15px;
+                        @include size(240px, 74px);
                         text-align: center;
+                        gap: 15px;
                         h4 {
-                            @include size(100px, 23px);
-                            @include mainCon1Text(700, 14px, 22.59px, center, #373F41);
-                            position: relative;
-                            left: 25px;
+                            @include size(240px, 23px);
+                            @include mainCon1Text(700, 18px, 22.59px, center, #373F41);
                         }
                         p {
-                            @include size(150px, 36px);
-                            @include mainCon1Text(400, 12px, 17.57px, center, #373F41);
-                            margin-top: 25px;
+                            @include size(240px, 36px);
+                            @include mainCon1Text(400, 14px, 17.57px, center, #373F41);
                         }
                     }
                 }
