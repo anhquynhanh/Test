@@ -96,6 +96,7 @@ main .container-1 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  object-fit: contain;
 }
 main .container-1 .content-synthetic {
   width: 730px;
@@ -189,6 +190,7 @@ main .container-1 .content-synthetic .container-btn-synthetic .container-1-btn-2
 main .container-1 .container-1-bg {
   width: 1440px;
   height: 560px;
+  object-fit: contain;
   background-image: url("../images/main/container-1/bg.jpeg");
   background-size: cover;
   background-position: center;
@@ -546,7 +548,7 @@ main .container-2 .container-2-4 .con-5-column .con-5-column-content p {
   }
   header .header .header-text-1 p {
     height: 18px;
-    font-size: 18px;
+    font-size: 12.4px;
   }
   header .header .header-text-2 {
     width: 169px;
@@ -560,8 +562,8 @@ main .container-2 .container-2-4 .con-5-column .con-5-column-content p {
     width: 42px;
     height: 18px;
     font-weight: 700;
-    font-size: 14px;
-    line-height: 17.57ox;
+    font-size: 9.64px;
+    line-height: 17.57px;
     align-items: center;
     color: rgb(60, 100, 177);
     cursor: pointer;
@@ -581,6 +583,7 @@ main .container-2 .container-2-4 .con-5-column .con-5-column-content p {
     font-size: 14px;
     line-height: 17.57px;
     align-items: center;
+    font-size: 9.64px;
   }
   main {
     width: 100%;
@@ -596,16 +599,18 @@ main .container-2 .container-2-4 .con-5-column .con-5-column-content p {
     display: flex;
     flex-direction: column;
     align-items: center;
+    object-fit: contain;
   }
   main .container-1 .content-synthetic {
-    width: 608.3px;
+    width: 100%;
     height: 216.7px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    object-fit: contain;
     position: absolute;
     top: 200px;
-    left: 180px;
+    left: 0;
     gap: 40px;
     margin: auto;
     z-index: 1;
@@ -625,7 +630,7 @@ main .container-2 .container-2-4 .con-5-column .con-5-column-content p {
   }
   main .container-1 .content-synthetic .content-synthetic-synthetic .content-content .content-h3 {
     font-weight: 700;
-    font-size: 44px;
+    font-size: 30.31px;
     line-height: 55.22px;
     align-items: center;
     color: rgb(55, 63, 65);
@@ -640,7 +645,7 @@ main .container-2 .container-2-4 .con-5-column .con-5-column-content p {
   }
   main .container-1 .content-synthetic .content-synthetic-synthetic .content-text .content-text-p {
     font-weight: 400;
-    font-size: 16px;
+    font-size: 11.02px;
     line-height: 20.08px;
     align-items: center;
     color: rgb(115, 123, 125);
@@ -665,7 +670,7 @@ main .container-2 .container-2-4 .con-5-column .con-5-column-content p {
     width: 95px;
     height: 18px;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 9.64px;
     line-height: 17.57px;
     align-items: center;
     color: white;
@@ -681,7 +686,7 @@ main .container-2 .container-2-4 .con-5-column .con-5-column-content p {
   }
   main .container-1 .content-synthetic .container-btn-synthetic .container-1-btn-2 span {
     font-weight: 700;
-    font-size: 14px;
+    font-size: 9.64px;
     line-height: 17.57px;
     align-items: center;
     color: #3C64B1;
@@ -723,7 +728,7 @@ main .container-2 .container-2-4 .con-5-column .con-5-column-content p {
   }
   main .container-2 .container-2-1 .container-2-1-1 .container-2-1-title {
     font-weight: 700;
-    font-size: 30px;
+    font-size: 20.68px;
     line-height: 37.65px;
     align-items: center;
     color: #373F41;
@@ -733,7 +738,7 @@ main .container-2 .container-2-4 .con-5-column .con-5-column-content p {
   }
   main .container-2 .container-2-1 .container-2-1-1 .container-2-1-text {
     font-weight: 400;
-    font-size: 16px;
+    font-size: 11.02px;
     line-height: 20.08px;
     align-items: center;
     color: #737B7D;
@@ -785,7 +790,7 @@ main .container-2 .container-2-4 .con-5-column .con-5-column-content p {
     width: 221.5px;
     height: 23px;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 12.4px;
     line-height: 22.59px;
     align-items: center;
     color: #373F41;
@@ -794,7 +799,7 @@ main .container-2 .container-2-4 .con-5-column .con-5-column-content p {
     width: 221.5px;
     height: 36px;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 9.64px;
     line-height: 17.57px;
     align-items: center;
     color: #373F41;
@@ -809,7 +814,7 @@ main .container-2 .container-2-4 .con-5-column .con-5-column-content p {
     width: 58px;
     height: 18px;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 9.64px;
     line-height: 17.57px;
     align-items: center;
     color: #3C64B1;
@@ -838,16 +843,15 @@ main .container-2 .container-2-4 .con-5-column .con-5-column-content p {
     width: 303.3px;
     height: 114px;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 20.68px;
     line-height: 37.65px;
     color: #373F41;
-    margin-bottom: 30px;
   }
   main .container-2 .container-2-2 .container-2-2-content .content-title-text p {
     width: 303.3px;
     height: 60px;
     font-weight: 400;
-    font-size: 10px;
+    font-size: 11.02px;
     line-height: 20.08px;
     color: #737B7D;
   }
@@ -887,7 +891,7 @@ main .container-2 .container-2-4 .con-5-column .con-5-column-content p {
     width: 95px;
     height: 18px;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 9.64px;
     line-height: 17.57px;
     align-items: center;
     color: #FFFFFF;
@@ -896,7 +900,7 @@ main .container-2 .container-2-4 .con-5-column .con-5-column-content p {
     width: 293.3px;
     height: 30px;
     font-weight: 600m;
-    font-size: 12px;
+    font-size: 8.27px;
     line-height: 15.06px;
     color: #737B7D;
   }
@@ -906,12 +910,15 @@ main .container-2 .container-2-4 .con-5-column .con-5-column-content p {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    margin: auto 0;
     gap: 40px;
-    margin: auto;
   }
   main .container-2 .container-2-3 .container-2-3-content {
-    width: 350px;
+    width: 100%;
     height: 284px;
+    object-fit: contain;
     margin: auto 0;
     gap: 60px;
   }
@@ -919,7 +926,7 @@ main .container-2 .container-2-4 .con-5-column .con-5-column-content p {
     width: 450px;
     height: 114px;
     font-weight: 700;
-    font-size: 30px;
+    font-size: 20.68px;
     line-height: 37.65px;
     color: #373F41;
     margin-bottom: 30px;
@@ -943,7 +950,7 @@ main .container-2 .container-2-4 .con-5-column .con-5-column-content p {
     width: 200px;
     height: 60px;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 11.02px;
     line-height: 20.08px;
     color: #737B7D;
   }
@@ -960,7 +967,7 @@ main .container-2 .container-2-4 .con-5-column .con-5-column-content p {
     width: 200px;
     height: 60px;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 11.02px;
     line-height: 20.08px;
     color: #737B7D;
   }
@@ -996,7 +1003,7 @@ main .container-2 .container-2-4 .con-5-column .con-5-column-content p {
     width: 188.3px;
     height: 23px;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 12.4px;
     line-height: 22.59px;
     align-items: center;
     color: #373F41;
@@ -1006,7 +1013,7 @@ main .container-2 .container-2-4 .con-5-column .con-5-column-content p {
     height: 36px;
     font-weight: 400;
     font-size: 14px;
-    line-height: 17.57px;
+    line-height: 9.64px;
     align-items: center;
     color: #373F41;
   }
@@ -1047,7 +1054,7 @@ main .container-2 .container-2-4 .con-5-column .con-5-column-content p {
   }
   header .header .header-text-1 p {
     height: 16px;
-    font-size: 16px;
+    font-size: 7.74px;
   }
   header .header .header-text-2 {
     width: 116.5px;
@@ -1061,7 +1068,7 @@ main .container-2 .container-2-4 .con-5-column .con-5-column-content p {
     width: 50px;
     height: 18px;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 7.74px;
     line-height: 17.57ox;
     align-items: center;
     color: rgb(60, 100, 177);
@@ -1078,6 +1085,7 @@ main .container-2 .container-2-4 .con-5-column .con-5-column-content p {
   }
   header .header .header-text-2 .header-btn span {
     font-weight: 600;
+    font-size: 7.74px;
   }
   main {
     width: 100%;
@@ -1093,44 +1101,48 @@ main .container-2 .container-2-4 .con-5-column .con-5-column-content p {
     display: flex;
     flex-direction: column;
     align-items: center;
+    object-fit: contain;
   }
   main .container-1 .content-synthetic {
-    width: 503.4px;
+    width: 100%;
     height: 260px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     position: absolute;
-    top: 220px;
-    left: 240px;
+    top: 200px;
+    left: 0;
     gap: 40px;
     margin: auto;
     z-index: 1;
   }
   main .container-1 .content-synthetic .content-synthetic-synthetic {
-    width: 503.4px;
+    width: 80%;
     height: 180px;
+    justify-content: center;
     margin-bottom: 30px;
     gap: 30px;
   }
   main .container-1 .content-synthetic .content-synthetic-synthetic .content-content {
-    width: 503.4px;
+    width: 100%;
     height: 110px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     margin-bottom: 60px;
   }
   main .container-1 .content-synthetic .content-synthetic-synthetic .content-content .content-h3 {
     font-weight: 700;
-    font-size: 44px;
+    font-size: 24.32px;
     line-height: 55.22px;
     align-items: center;
     color: rgb(55, 63, 65);
     text-align: center;
   }
   main .container-1 .content-synthetic .content-synthetic-synthetic .content-text {
-    width: 503.4px;
+    width: 100%;
     height: 40px;
     display: flex;
     flex-direction: column;
@@ -1138,7 +1150,7 @@ main .container-2 .container-2-4 .con-5-column .con-5-column-content p {
   }
   main .container-1 .content-synthetic .content-synthetic-synthetic .content-text .content-text-p {
     font-weight: 400;
-    font-size: 16px;
+    font-size: 8.84px;
     line-height: 20.08px;
     align-items: center;
     color: rgb(115, 123, 125);
@@ -1163,7 +1175,7 @@ main .container-2 .container-2-4 .con-5-column .con-5-column-content p {
     width: 95px;
     height: 18px;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 7.74px;
     line-height: 17.57px;
     align-items: center;
     color: white;
@@ -1179,7 +1191,7 @@ main .container-2 .container-2-4 .con-5-column .con-5-column-content p {
   }
   main .container-1 .content-synthetic .container-btn-synthetic .container-1-btn-2 span {
     font-weight: 700;
-    font-size: 14px;
+    font-size: 7.74px;
     line-height: 17.57px;
     align-items: center;
     color: #3C64B1;
@@ -1187,6 +1199,7 @@ main .container-2 .container-2-4 .con-5-column .con-5-column-content p {
   main .container-1 .container-1-bg {
     width: 100%;
     height: 560px;
+    object-fit: contain;
     background-image: url("../images/main/container-1/bg.jpeg");
     background-size: cover;
     background-position: center;
@@ -1194,11 +1207,12 @@ main .container-2 .container-2-4 .con-5-column .con-5-column-content p {
     opacity: 0.08;
   }
   main .container-2 {
-    width: 100%;
+    width: 83.33%;
     height: 1712.33px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    object-fit: contain;
     gap: 80px;
   }
   main .container-2 .container-2-1 {
@@ -1207,6 +1221,7 @@ main .container-2 .container-2-4 .con-5-column .con-5-column-content p {
     display: flex;
     flex-direction: column;
     align-items: center;
+    object-fit: contain;
     gap: 60px;
     margin: auto;
   }
@@ -1222,22 +1237,24 @@ main .container-2 .container-2-4 .con-5-column .con-5-column-content p {
   }
   main .container-2 .container-2-1 .container-2-1-1 .container-2-1-title {
     font-weight: 700;
-    font-size: 30px;
+    font-size: 16.58px;
     line-height: 37.65px;
     align-items: center;
     color: #373F41;
     width: 100%;
     height: 38px;
+    object-fit: contain;
     margin-bottom: 20px;
   }
   main .container-2 .container-2-1 .container-2-1-1 .container-2-1-text {
     font-weight: 400;
-    font-size: 16px;
+    font-size: 8.84px;
     line-height: 20.08px;
     align-items: center;
     color: #737B7D;
     width: 100%;
     height: 20px;
+    object-fit: contain;
   }
   main .container-2 .container-2-1 .container-2-1-2 {
     width: 100%;
@@ -1245,23 +1262,22 @@ main .container-2 .container-2-4 .con-5-column .con-5-column-content p {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 40px;
+    align-items: center;
+    gap: 10px;
   }
   main .container-2 .container-2-1 .container-2-1-2 .container-2-column {
-    width: 100%;
+    width: 30%;
     height: 157px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   }
   main .container-2 .container-2-1 .container-2-1-2 .container-2-column .column-div-icon-text {
-    width: 30%;
+    width: 100%;
     height: 119px;
+    object-fit: contain;
     gap: 20px;
   }
   main .container-2 .container-2-1 .container-2-1-2 .container-2-column .column-div-icon-text img {
@@ -1275,25 +1291,29 @@ main .container-2 .container-2-4 .con-5-column .con-5-column-content p {
     display: flex;
     flex-direction: column;
     align-items: center;
+    object-fit: contain;
     gap: 10px;
   }
   main .container-2 .container-2-1 .container-2-1-2 .container-2-column .column-div-icon-text .column-title-text h4 {
-    width: 250px;
+    width: 100%;
     height: 23px;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 9.95px;
     line-height: 22.59px;
     align-items: center;
     color: #373F41;
+    object-fit: contain;
+    margin: auto;
   }
   main .container-2 .container-2-1 .container-2-1-2 .container-2-column .column-div-icon-text .column-title-text p {
-    width: 250px;
+    width: 100%;
     height: 36px;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 7.74px;
     line-height: 17.57px;
     align-items: center;
     color: #373F41;
+    object-fit: contain;
   }
   main .container-2 .container-2-1 .container-2-1-2 .container-2-column .column-div-textual {
     width: 58px;
@@ -1304,7 +1324,7 @@ main .container-2 .container-2-4 .con-5-column .con-5-column-content p {
     width: 58px;
     height: 18px;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 7.74px;
     line-height: 17.57px;
     align-items: center;
     color: #3C64B1;
@@ -1313,43 +1333,50 @@ main .container-2 .container-2-4 .con-5-column .con-5-column-content p {
     width: 100%;
     height: 420px;
     display: flex;
+    justify-content: space-between;
     margin: auto;
     gap: 40px;
   }
   main .container-2 .container-2-2 img {
-    width: 413.8px;
-    height: 289.6px;
-    background-color: #D9D9D9;
+    width: 45%;
+    object-fit: contain;
+    background-color: transparent;
   }
   main .container-2 .container-2-2 .container-2-2-content {
-    width: 450px;
+    width: 45%;
     height: 320px;
-    margin: auto;
+    margin: auto 0;
     gap: 40px;
   }
   main .container-2 .container-2-2 .container-2-2-content .content-title-text {
-    width: 430px;
+    width: 100%;
     height: 194px;
+    object-fit: contain;
+    margin: auto;
     gap: 20px;
   }
   main .container-2 .container-2-2 .container-2-2-content .content-title-text h4 {
-    width: 430px;
+    width: 100%;
     height: 114px;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 16.58px;
     line-height: 37.65px;
     color: #373F41;
+    margin: auto;
+    object-fit: contain;
   }
   main .container-2 .container-2-2 .container-2-2-content .content-title-text p {
-    width: 430px;
+    width: 100%;
     height: 60px;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 8.84px;
     line-height: 20.08px;
     color: #737B7D;
+    margin: auto;
+    object-fit: contain;
   }
   main .container-2 .container-2-2 .container-2-2-content .field {
-    width: 450px;
+    width: 100%;
     height: 86px;
     display: flex;
     flex-direction: column;
@@ -1357,7 +1384,7 @@ main .container-2 .container-2-4 .con-5-column .con-5-column-content p {
     gap: 16px;
   }
   main .container-2 .container-2-2 .container-2-2-content .field .form {
-    width: 450px;
+    width: 100%;
     height: 40px;
     display: flex;
     flex-direction: row;
@@ -1365,14 +1392,14 @@ main .container-2 .container-2-4 .con-5-column .con-5-column-content p {
     gap: 20px;
   }
   main .container-2 .container-2-2 .container-2-2-content .field .form input {
-    width: 240px;
+    width: 70%;
     height: 40px;
     background-color: #F4F5F4;
     gap: 10px;
     border: 0;
   }
   main .container-2 .container-2-2 .container-2-2-content .field .form button {
-    width: 180px;
+    width: 30%;
     height: 40px;
     background-color: #3C64B1;
     border: none;
@@ -1384,16 +1411,16 @@ main .container-2 .container-2-4 .con-5-column .con-5-column-content p {
     width: 95px;
     height: 18px;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 7.74px;
     line-height: 17.57px;
     align-items: center;
     color: #FFFFFF;
   }
   main .container-2 .container-2-2 .container-2-2-content .field p {
-    width: 450px;
+    width: 100%;
     height: 30px;
     font-weight: 600m;
-    font-size: 12px;
+    font-size: 6.63px;
     line-height: 15.06px;
     color: #737B7D;
   }
@@ -1403,33 +1430,39 @@ main .container-2 .container-2-4 .con-5-column .con-5-column-content p {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    object-fit: contain;
     gap: 40px;
     margin: auto;
+    align-items: center;
   }
   main .container-2 .container-2-3 .container-2-3-content {
-    width: 450px;
+    width: 45%;
     height: 284px;
+    object-fit: contain;
     margin: auto 0;
     gap: 60px;
   }
   main .container-2 .container-2-3 .container-2-3-content h4 {
-    width: 450px;
+    width: 100%;
     height: 114px;
     font-weight: 700;
-    font-size: 30px;
+    font-size: 16.58px;
     line-height: 37.65px;
     color: #373F41;
+    object-fit: contain;
     margin-bottom: 30px;
   }
   main .container-2 .container-2-3 .container-2-3-content .container-2-3-column {
-    width: 450px;
+    width: 100%;
     height: 110px;
-    gap: 30px;
+    object-fit: contain;
     display: flex;
+    gap: 30px;
   }
   main .container-2 .container-2-3 .container-2-3-content .container-2-3-column .left {
-    width: 210px;
+    width: 40%;
     height: 110px;
+    object-fit: contain;
     gap: 20px;
   }
   main .container-2 .container-2-3 .container-2-3-content .container-2-3-column .left img {
@@ -1437,16 +1470,18 @@ main .container-2 .container-2-4 .con-5-column .con-5-column-content p {
     height: 30px;
   }
   main .container-2 .container-2-3 .container-2-3-content .container-2-3-column .left p {
-    width: 210px;
+    width: 100%;
     height: 60px;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 8.84px;
     line-height: 20.08px;
     color: #737B7D;
+    object-fit: contain;
   }
   main .container-2 .container-2-3 .container-2-3-content .container-2-3-column .right {
-    width: 210px;
+    width: 40%;
     height: 110px;
+    object-fit: contain;
     gap: 20px;
   }
   main .container-2 .container-2-3 .container-2-3-content .container-2-3-column .right img {
@@ -1454,16 +1489,18 @@ main .container-2 .container-2-4 .con-5-column .con-5-column-content p {
     height: 30px;
   }
   main .container-2 .container-2-3 .container-2-3-content .container-2-3-column .right p {
-    width: 210px;
+    width: 100%;
     height: 60px;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 8.84px;
     line-height: 20.08px;
     color: #737B7D;
+    object-fit: contain;
   }
   main .container-2 .container-2-3 img {
-    width: 413.8px;
+    width: 45%;
     height: 289.6px;
+    object-fit: contain;
     background-repeat: no-repeat;
     background-position: center center;
   }
@@ -1472,40 +1509,46 @@ main .container-2 .container-2-4 .con-5-column .con-5-column-content p {
     height: 334px;
     display: flex;
     justify-content: space-between;
+    object-fit: contain;
     margin: auto;
   }
   main .container-2 .container-2-4 .con-5-column {
-    width: 220px;
+    width: 20%;
     height: 334px;
+    object-fit: contain;
     gap: 20px;
   }
   main .container-2 .container-2-4 .con-5-column img {
-    width: 220px;
+    width: 100%;
     height: 220px;
+    object-fit: contain;
   }
   main .container-2 .container-2-4 .con-5-column .con-5-column-content {
-    width: 220px;
+    width: 100%;
     height: 74px;
+    object-fit: contain;
     text-align: center;
     gap: 15px;
   }
   main .container-2 .container-2-4 .con-5-column .con-5-column-content h4 {
-    width: 220px;
+    width: 100%;
     height: 23px;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 9.95px;
     line-height: 22.59px;
     align-items: center;
     color: #373F41;
+    object-fit: contain;
   }
   main .container-2 .container-2-4 .con-5-column .con-5-column-content p {
-    width: 220px;
+    width: 100%;
     height: 36px;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 7.74px;
     line-height: 17.57px;
     align-items: center;
     color: #373F41;
+    object-fit: contain;
   }
 }
 @media (min-width: 320px) and (max-width: 599px) {
@@ -1513,70 +1556,76 @@ main .container-2 .container-2-4 .con-5-column .con-5-column-content p {
     font-family: "Mulish", sans-serif;
     padding: 0, 0, 60px, 0;
     width: 100%;
-    height: 100vh;
+    height: 2498.33px;
+    object-fit: contain;
   }
   header {
     width: 100%;
     height: 86px;
-    gap: 50px;
+    object-fit: contain;
     background-color: rgb(239, 243, 255);
     position: sticky;
+    gap: 10px;
   }
   header .header {
     width: 83.33%;
     height: 40px;
     display: flex;
     justify-content: space-between;
+    object-fit: contain;
     align-items: center;
     margin: 0 auto;
   }
   header .header .header-logo {
-    width: 29.6px;
+    width: 15%;
     height: 16.5px;
+    object-fit: contain;
     cursor: pointer;
   }
   header .header .header-text-1 {
-    width: 100.5px;
+    width: 30%;
     height: 18px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 5px;
   }
   header .header .header-text-1 p {
     height: 14px;
-    font-size: 14px;
+    font-size: 5.8px;
   }
   header .header .header-text-2 {
-    width: 79px;
+    width: 30%;
     height: 40px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: space-between;
+    object-fit: contain;
     align-items: center;
     gap: 5px;
   }
   header .header .header-text-2 .header-btn-login {
-    width: 42px;
+    width: 40%;
     height: 18px;
+    object-fit: contain;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 5.8px;
     line-height: 17.57px;
     align-items: center;
     color: rgb(60, 100, 177);
     cursor: pointer;
   }
   header .header .header-text-2 .header-btn {
-    width: 50px;
+    width: 50%;
     height: 40px;
     background-color: #3C64B1;
     border: none;
     color: white;
+    object-fit: contain;
     cursor: pointer;
+    padding: 5px 10px;
   }
   header .header .header-text-2 .header-btn span {
-    font-size: 14px;
+    font-size: 5.8px;
   }
   main {
     width: 100%;
@@ -1584,67 +1633,74 @@ main .container-2 .container-2-4 .con-5-column .con-5-column-content p {
     display: flex;
     flex-direction: column;
     align-items: center;
+    object-fit: contain;
     gap: 80px;
   }
   main .container-1 {
-    width: 1440px;
+    width: 100%;
     height: 560px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    object-fit: contain;
   }
   main .container-1 .content-synthetic {
-    width: 730px;
+    width: 100%;
     height: 260px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: absolute;
-    top: 150px;
-    left: 355px;
+    object-fit: contain;
     gap: 40px;
     margin: auto;
     z-index: 1;
+    position: absolute;
+    top: 150px;
+    left: 0;
   }
   main .container-1 .content-synthetic .content-synthetic-synthetic {
-    width: 730px;
+    width: 80%;
     height: 180px;
+    object-fit: contain;
     gap: 30px;
   }
   main .container-1 .content-synthetic .content-synthetic-synthetic .content-content {
-    width: 730px;
+    width: 100%;
     height: 110px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    object-fit: contain;
     margin-bottom: 20px;
   }
   main .container-1 .content-synthetic .content-synthetic-synthetic .content-content .content-h3 {
     font-weight: 700;
-    font-size: 44px;
+    font-size: 18.3px;
     line-height: 55.22px;
     align-items: center;
     color: rgb(55, 63, 65);
     text-align: center;
   }
   main .container-1 .content-synthetic .content-synthetic-synthetic .content-text {
-    width: 730px;
+    width: 100%;
     height: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    object-fit: contain;
   }
   main .container-1 .content-synthetic .content-synthetic-synthetic .content-text .content-text-p {
     font-weight: 400;
-    font-size: 16px;
+    font-size: 6.7px;
     line-height: 20.08px;
     align-items: center;
     color: rgb(115, 123, 125);
     text-align: center;
   }
   main .container-1 .content-synthetic .container-btn-synthetic {
-    width: 275px;
+    width: 40%;
     height: 40px;
+    object-fit: contain;
     display: flex;
     gap: 24px;
   }
@@ -1652,16 +1708,17 @@ main .container-2 .container-2-4 .con-5-column .con-5-column-content p {
     background-color: #3C64B1;
     border: none;
     color: white;
-    width: 135px;
+    width: 50%;
     height: 40px;
-    padding: 10px, 20px;
+    object-fit: contain;
+    padding: 5px 10px;
     cursor: pointer;
   }
   main .container-1 .content-synthetic .container-btn-synthetic .container-1-btn-1 span {
     width: 95px;
     height: 18px;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 5.8px;
     line-height: 17.57px;
     align-items: center;
     color: white;
@@ -1670,21 +1727,23 @@ main .container-2 .container-2-4 .con-5-column .con-5-column-content p {
     background-color: none;
     border: 1px solid #3C64B1;
     color: #3C64B1;
-    width: 116px;
+    width: 45%;
     height: 40px;
-    padding: 10px, 20px;
+    object-fit: contain;
+    padding: 5px 10px;
     cursor: pointer;
   }
   main .container-1 .content-synthetic .container-btn-synthetic .container-1-btn-2 span {
     font-weight: 700;
-    font-size: 14px;
+    font-size: 5.8px;
     line-height: 17.57px;
     align-items: center;
     color: #3C64B1;
   }
   main .container-1 .container-1-bg {
-    width: 1440px;
+    width: 100%;
     height: 560px;
+    object-fit: contain;
     background-image: url("../images/main/container-1/bg.jpeg");
     background-size: cover;
     background-position: center;
@@ -1692,74 +1751,76 @@ main .container-2 .container-2-4 .con-5-column .con-5-column-content p {
     opacity: 0.08;
   }
   main .container-2 {
-    width: 1200px;
+    width: 83.33%;
     height: 1712.33px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    object-fit: contain;
     gap: 80px;
   }
   main .container-2 .container-2-1 {
-    width: 1200px;
+    width: 100%;
     height: 298.33px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 60px;
+    object-fit: contain;
+    gap: 30px;
     margin: auto;
   }
   main .container-2 .container-2-1 .container-2-1-1 {
-    width: 920px;
+    width: 100%;
     height: 78px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    object-fit: contain;
     text-align: center;
-    gap: 20px;
+    gap: 10px;
     margin: auto;
   }
   main .container-2 .container-2-1 .container-2-1-1 .container-2-1-title {
     font-weight: 700;
-    font-size: 30px;
+    font-size: 12.5px;
     line-height: 37.65px;
     align-items: center;
     color: #373F41;
-    width: 920px;
+    width: 100%;
     height: 38px;
-    margin-bottom: 20px;
   }
   main .container-2 .container-2-1 .container-2-1-1 .container-2-1-text {
     font-weight: 400;
-    font-size: 16px;
+    font-size: 6.7px;
     line-height: 20.08px;
     align-items: center;
     color: #737B7D;
-    width: 920px;
+    width: 100%;
     height: 20px;
   }
   main .container-2 .container-2-1 .container-2-1-2 {
-    width: 1080px;
+    width: 100%;
     height: 160.33px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    object-fit: contain;
     gap: 40px;
   }
   main .container-2 .container-2-1 .container-2-1-2 .container-2-column {
-    width: 333.33px;
+    width: 33%;
     height: 157px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    object-fit: contain;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    gap: 20px;
   }
   main .container-2 .container-2-1 .container-2-1-2 .container-2-column .column-div-icon-text {
-    width: 333.33px;
+    width: 100%;
     height: 119px;
+    object-fit: contain;
     gap: 20px;
   }
   main .container-2 .container-2-1 .container-2-1-2 .container-2-column .column-div-icon-text img {
@@ -1768,113 +1829,131 @@ main .container-2 .container-2-4 .con-5-column .con-5-column-content p {
     margin-bottom: 10px;
   }
   main .container-2 .container-2-1 .container-2-1-2 .container-2-column .column-div-icon-text .column-title-text {
-    width: 350px;
+    width: 100%;
     height: 69px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    object-fit: contain;
     gap: 10px;
   }
   main .container-2 .container-2-1 .container-2-1-2 .container-2-column .column-div-icon-text .column-title-text h4 {
-    width: 350px;
+    width: 100%;
     height: 23px;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 7.5px;
     line-height: 22.59px;
     align-items: center;
     color: #373F41;
+    object-fit: contain;
   }
   main .container-2 .container-2-1 .container-2-1-2 .container-2-column .column-div-icon-text .column-title-text p {
-    width: 350px;
+    width: 100%;
     height: 36px;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 5.8px;
     line-height: 17.57px;
     align-items: center;
     color: #373F41;
+    object-fit: contain;
   }
   main .container-2 .container-2-1 .container-2-1-2 .container-2-column .column-div-textual {
-    width: 58px;
+    width: 100%;
     height: 18px;
+    object-fit: contain;
     gap: 10px;
   }
   main .container-2 .container-2-1 .container-2-1-2 .container-2-column .column-div-textual p {
-    width: 58px;
+    width: 100%;
     height: 18px;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 5.8px;
     line-height: 17.57px;
     align-items: center;
     color: #3C64B1;
+    object-fit: contain;
   }
   main .container-2 .container-2-2 {
-    width: 1200px;
-    height: 420px;
+    width: 100%;
+    height: none;
+    object-fit: contain;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: auto;
     gap: 40px;
   }
   main .container-2 .container-2-2 img {
-    width: 600px;
+    width: 50%;
     height: 420px;
+    object-fit: contain;
     background-color: #D9D9D9;
   }
   main .container-2 .container-2-2 .container-2-2-content {
-    width: 560px;
+    width: 100%;
     height: 320px;
+    object-fit: contain;
     margin: auto;
     gap: 40px;
   }
   main .container-2 .container-2-2 .container-2-2-content .content-title-text {
-    width: 560px;
+    width: 100%;
     height: 194px;
+    object-fit: contain;
     gap: 20px;
   }
   main .container-2 .container-2-2 .container-2-2-content .content-title-text h4 {
-    width: 540px;
+    width: 100%;
     height: 114px;
     font-weight: 700;
-    font-size: 30px;
+    font-size: 12.5px;
     line-height: 37.65px;
     color: #373F41;
+    object-fit: contain;
   }
   main .container-2 .container-2-2 .container-2-2-content .content-title-text p {
-    width: 540px;
+    width: 100%;
     height: 60px;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 6.7px;
     line-height: 20.08px;
     color: #737B7D;
+    object-fit: contain;
   }
   main .container-2 .container-2-2 .container-2-2-content .field {
-    width: 560px;
+    width: 100%;
     height: 86px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    object-fit: contain;
     gap: 16px;
   }
   main .container-2 .container-2-2 .container-2-2-content .field .form {
-    width: 560px;
+    width: 100%;
     height: 40px;
+    object-fit: contain;
     display: flex;
     flex-direction: row;
     justify-content: stretch;
     gap: 20px;
   }
   main .container-2 .container-2-2 .container-2-2-content .field .form input {
-    width: 405px;
+    width: 70%;
     height: 40px;
+    object-fit: contain;
     background-color: #F4F5F4;
     gap: 10px;
     border: 0;
   }
   main .container-2 .container-2-2 .container-2-2-content .field .form button {
-    width: 135px;
+    width: 25%;
     height: 40px;
     background-color: #3C64B1;
     border: none;
     color: white;
+    object-fit: contain;
     padding: 10px, 20px;
     cursor: pointer;
   }
@@ -1882,52 +1961,57 @@ main .container-2 .container-2-4 .con-5-column .con-5-column-content p {
     width: 95px;
     height: 18px;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 5.8px;
     line-height: 17.57px;
     align-items: center;
     color: #FFFFFF;
   }
   main .container-2 .container-2-2 .container-2-2-content .field p {
-    width: 560px;
+    width: 100%;
     height: 30px;
     font-weight: 600m;
-    font-size: 12px;
+    font-size: 5px;
     line-height: 15.06px;
     color: #737B7D;
+    object-fit: contain;
   }
   main .container-2 .container-2-3 {
-    width: 1200px;
+    width: 100%;
     height: 420px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 40px;
+    flex-direction: column;
+    align-items: center;
+    object-fit: contain;
     margin: auto;
+    gap: 40px;
   }
   main .container-2 .container-2-3 .container-2-3-content {
-    width: 560px;
+    width: 100%;
     height: 284px;
+    object-fit: contain;
     margin: auto 0;
     gap: 60px;
   }
   main .container-2 .container-2-3 .container-2-3-content h4 {
-    width: 540px;
+    width: 100%;
     height: 114px;
+    object-fit: contain;
     font-weight: 700;
-    font-size: 30px;
+    font-size: 12.5px;
     line-height: 37.65px;
     color: #373F41;
-    margin-bottom: 30px;
   }
   main .container-2 .container-2-3 .container-2-3-content .container-2-3-column {
-    width: 560px;
+    width: 100%;
     height: 110px;
+    object-fit: contain;
     gap: 30px;
     display: flex;
   }
   main .container-2 .container-2-3 .container-2-3-content .container-2-3-column .left {
-    width: 255px;
+    width: 45%;
     height: 110px;
+    object-fit: contain;
     gap: 20px;
   }
   main .container-2 .container-2-3 .container-2-3-content .container-2-3-column .left img {
@@ -1935,16 +2019,18 @@ main .container-2 .container-2-4 .con-5-column .con-5-column-content p {
     height: 30px;
   }
   main .container-2 .container-2-3 .container-2-3-content .container-2-3-column .left p {
-    width: 255px;
+    width: 100%;
     height: 60px;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 6.7px;
     line-height: 20.08px;
     color: #737B7D;
+    object-fit: contain;
   }
   main .container-2 .container-2-3 .container-2-3-content .container-2-3-column .right {
-    width: 255px;
+    width: 45%;
     height: 110px;
+    object-fit: contain;
     gap: 20px;
   }
   main .container-2 .container-2-3 .container-2-3-content .container-2-3-column .right img {
@@ -1952,55 +2038,62 @@ main .container-2 .container-2-4 .con-5-column .con-5-column-content p {
     height: 30px;
   }
   main .container-2 .container-2-3 .container-2-3-content .container-2-3-column .right p {
-    width: 255px;
+    width: 100%;
     height: 60px;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 6.7px;
     line-height: 20.08px;
     color: #737B7D;
+    object-fit: contain;
   }
   main .container-2 .container-2-3 img {
-    width: 600px;
+    width: 70%;
     height: 420px;
+    object-fit: contain;
     background-repeat: no-repeat;
     background-position: center center;
   }
   main .container-2 .container-2-4 {
-    width: 1200px;
+    width: 100%;
     height: 334px;
     display: flex;
     justify-content: space-between;
-    margin: auto;
+    object-fit: contain;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
   }
   main .container-2 .container-2-4 .con-5-column {
-    width: 240px;
+    width: 45%;
     height: 334px;
     gap: 20px;
   }
   main .container-2 .container-2-4 .con-5-column img {
-    width: 240px;
+    width: 100%;
     height: 240px;
+    object-fit: contain;
   }
   main .container-2 .container-2-4 .con-5-column .con-5-column-content {
-    width: 240px;
+    width: 100%;
     height: 74px;
+    object-fit: contain;
     text-align: center;
     gap: 15px;
   }
   main .container-2 .container-2-4 .con-5-column .con-5-column-content h4 {
-    width: 240px;
+    width: 100%;
     height: 23px;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 7.5px;
     line-height: 22.59px;
     align-items: center;
     color: #373F41;
   }
   main .container-2 .container-2-4 .con-5-column .con-5-column-content p {
-    width: 240px;
+    width: 100%;
     height: 36px;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 5.8px;
     line-height: 17.57px;
     align-items: center;
     color: #373F41;
