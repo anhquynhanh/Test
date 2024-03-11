@@ -7,9 +7,11 @@
 }
 
 body {
+    @include size(1440px, 2498.33px);
     font-family: 'Mulish', sans-serif;
     padding: 0, 0, 60px, 0;
-    @include size(1440px, 2498.33px);
+    font-size: 18px;
+    margin: 0 auto;
 }
 
 header {
@@ -57,6 +59,9 @@ header {
             }
         }
     }
+    .menu {
+        display: none;
+    }
 }
 
 main {
@@ -76,7 +81,7 @@ main {
             gap: 40px;
             margin: auto;
             z-index: 1;
-            .content-synthetic-synthetic {
+            .synthetic {
                 @include size(730px, 180px);
                 gap: 30px;
                 .content-content {
@@ -97,11 +102,11 @@ main {
                     }
                 }
             }
-            .container-btn-synthetic {
+            .btn-synthetic {
                 @include size(275px, 40px);
                 display: flex;
                 gap: 24px;
-                .container-1-btn-1 {
+                .btn-1 {
                     @include btn-1();
                     @include size(135px, 40px);
                     padding: 10px, 20px;
@@ -111,7 +116,7 @@ main {
                         @include mainCon1Text(700, 14px, 17.57px, center, white);
                     }
                 }
-                .container-1-btn-2 {
+                .btn-2 {
                     @include btn-2();
                     @include size(116px, 40px);
                     padding: 10px, 20px;
@@ -136,38 +141,38 @@ main {
         @include size(1200px, 1712.33px);
         @include disFlexCoCen();
         gap: 80px;
-        .container-2-1 {
+        .features {
             @include size(1200px,298.33px);
             @include disFlexCoCen();
             gap: 60px;
             margin: auto;
-            .container-2-1-1 {
+            .content {
                 @include size(920px, 78px);
                 @include disFlexCoCen();
                 text-align: center;
                 gap: 20px;
                 margin: auto;
-                .container-2-1-title {
+                .title {
                     @include mainCon1Text(700, 30px, 37.65px, center, #373F41);
                     @include size(920px, 38px);
                     margin-bottom: 20px;
                 }
-                .container-2-1-text {
+                .text {
                     @include mainCon1Text(400, 16px, 20.08px, center, #737B7D);
                     @include size(920px, 20px);
                 }
             }
-            .container-2-1-2 {
+            .columns {
                 @include size(1080px, 160.33px);
                 @include disFlexRowBet();
                 gap: 40px;
-                .container-2-column {
+                .column {
                     @include size(333.33px, 157px);
                     @include disFlexCoCen();
                     gap: 20px;
                     text-align: center;
                     @include disFlexCoCen();
-                    .column-div-icon-text {
+                    .icon-text {
                         @include size(333.33px, 119px);
                         gap: 20px;
                         img {
@@ -188,7 +193,7 @@ main {
                             }
                         }
                     }
-                    .column-div-textual {
+                    .textual {
                         @include size(58px, 18px);
                         gap: 10px;
                         p {
@@ -199,7 +204,7 @@ main {
                 }
             }
         }
-        .container-2-2 {
+        .wrapper-1 {
             @include size(1200px, 420px);
             display: flex;
             margin: auto;
@@ -208,7 +213,7 @@ main {
                 @include size(600px, 420px);
                 background-color: #D9D9D9;
             }
-            .container-2-2-content {
+            .content {
                 @include size(560px, 320px);
                 margin: auto;
                 gap: 40px;
@@ -258,12 +263,12 @@ main {
                 }
             }
         }
-        .container-2-3 {
+        .wrapper-2 {
             @include size(1200px, 420px);
             @include disFlexRowBet();
             gap: 40px;
             margin: auto;
-            .container-2-3-content {
+            .content {
                 @include size(560px, 284px);
                 margin: auto 0;
                 gap: 60px;
@@ -272,7 +277,7 @@ main {
                     @include mainCon2Text(700, 30px, 37.65px, #373F41);
                     margin-bottom: 30px;
                 }
-                .container-2-3-column {
+                .column {
                     @include size(560px, 110px);
                     gap: 30px;
                     display: flex;
@@ -306,17 +311,19 @@ main {
                 background-position: center center;
             }
         }
-        .container-2-4 {
+        .gallery {
             @include size(1200px, 334px);
-            @include disFlexBet();
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
             margin: auto;
-            .con-5-column {
+            column {
                 @include size(240px, 334px);
                 gap: 20px;
                 img {
                     @include size(240px, 240px);
                 }
-                .con-5-column-content {
+                .content {
                     @include size(240px, 74px);
                     text-align: center;
                     gap: 15px;
@@ -339,13 +346,14 @@ main {
         @include size(100%, 100vh);
         font-family: 'Mulish', sans-serif;
         padding: 0, 0, 60px, 0;
+        font-size: 18px;
     }
 
     header {
         @include size(100%, 86px);
-        gap: 10px;
         background-color: rgba(239, 243, 255, 1);
         position: sticky;
+        gap: 10px;
         .header {
             @include size(83.33%, 40px);
             @include disFlexBet();
@@ -361,7 +369,6 @@ main {
                 gap: 30px;
                 p {
                     height: 18px;
-                    font-size: 12.4px;
                 }
             }
             .header-text-2 {
@@ -370,8 +377,8 @@ main {
                 gap: 20px;
                 align-items: center;
                 .header-btn-login {
-                    @include size(42px, 18px);
-                    @include mainCon1Text(700, 9.64px, 17.57px, center, rgba(60, 100, 177, 1));
+                    @include size(60px, 18px);
+                    @include mainCon1Text(700, 18px, 17.57px, center, rgba(60, 100, 177, 1));
                     cursor: pointer;
                 }
                 .header-btn {
@@ -381,7 +388,7 @@ main {
                     cursor: pointer;
                     span {
                         @include headerText2();
-                        font-size: 9.64px;
+                        font-size: 18px;
                     }
                 }
             }
@@ -391,6 +398,7 @@ main {
     main {
         @include size(100%, 2352.33px);
         @include disFlexCoCen();
+        object-fit: contain;
         gap: 80px;
         .container-1 {
             @include size(100%, 560px);
@@ -406,7 +414,7 @@ main {
                 gap: 40px;
                 margin: auto;
                 z-index: 1;
-                .content-synthetic-synthetic {
+                .synthetic {
                     @include size(608.3px, 150px);
                     gap: 30px;
                     .content-content {
@@ -414,7 +422,6 @@ main {
                         @include mainCon1TextP();
                         margin-bottom: 20px;
                         .content-h3 {
-                            @include mainCon1Text(700, 30.31px, 55.22px, center, rgba(55, 63, 65, 1));
                             text-align: center;
                         }
                     }
@@ -422,32 +429,31 @@ main {
                         @include size(608.3p, 40px);
                         @include mainCon1TextP();
                         .content-text-p {
-                            @include mainCon1Text(400, 11.02px, 20.08px, center, rgba(115, 123, 125, 1));
                             text-align: center;
                         }
                     }
                 }
-                .container-btn-synthetic {
+                .btn-synthetic {
                     @include size(229.2px, 40px);
                     display: flex;
                     gap: 24px;
-                    .container-1-btn-1 {
+                    .btn-1 {
                         @include btn-1();
                         @include size(112.5px, 40px);
                         padding: 10px, 20px;
                         cursor: pointer;
                         span {
-                            @include size(95px, 18px);
-                            @include mainCon1Text(700, 9.64px, 17.57px, center, white);
+                            @include size(95px, 14px);
+                            @include mainCon1Text(700, 14px, 17.57px, center, white);
                         }
                     }
-                    .container-1-btn-2 {
+                    .btn-2 {
                         @include btn-2();
-                        @include size(96.7px, 40px);
+                        @include size(100px, 40px);
                         padding: 10px, 20px;
                         cursor: pointer;
                         span {
-                            @include mainCon1Text(700, 9.64px, 17.57px, center, #3C64B1);
+                            @include mainCon1Text(700, 14px, 17.57px, center, #3C64B1);
                         }
                     }
                 }
@@ -464,38 +470,36 @@ main {
         .container-2 {
             @include size(83.33%, 1712.33px);
             @include disFlexCoCen();
-            .container-2-1 {
+            .features {
                 @include size(100%,298.33px);
                 @include disFlexCoCen();
                 gap: 60px;
                 margin: auto;
-                .container-2-1-1 {
+                .content {
                     @include size(100%, 78px);
                     @include disFlexCoCen();
                     text-align: center;
                     gap: 20px;
                     margin: auto;
-                    .container-2-1-title {
-                        @include mainCon1Text(700, 20.68px, 37.65px, center, #373F41);
+                    .title {
                         @include size(100%, 38px);
                         margin-bottom: 20px;
                     }
-                    .container-2-1-text {
-                        @include mainCon1Text(400, 11.02px, 20.08px, center, #737B7D);
+                    .text {
                         @include size(100%, 20px);
                     }
                 }
-                .container-2-1-2 {
+                .columns {
                     @include size(83.33%, 160.33px);
                     @include disFlexRowBet();
                     gap: 40px;
-                    .container-2-column {
+                    .column {
                         @include size(221.5px, 157px);
                         @include disFlexCoCen();
                         gap: 20px;
                         text-align: center;
                         @include disFlexCoCen();
-                        .column-div-icon-text {
+                        .icon-text {
                             @include size(221.5px, 119px);
                             @include disFlexCoCen();
                             gap: 20px;
@@ -509,46 +513,45 @@ main {
                                 gap: 10px;
                                 h4 {
                                     @include size(221.5px, 23px);
-                                    @include mainCon1Text(700, 12.4px, 22.59px, center, #373F41);
                                 }
                                 p {
                                     @include size(221.5px, 36px);
-                                    @include mainCon1Text(400, 9.64px, 17.57px, center, #373F41);
                                 }
                             }
                         }
-                        .column-div-textual {
+                        .textual {
                             @include size(58px, 18px);
                             margin-top: 20px;
                             gap: 10px;
                             p {
                                 @include size(58px, 18px);
-                                @include mainCon1Text(700, 9.64px, 17.57px, center, #3C64B1);
                             }
                         }
                     }
                 }
             }
-            .container-2-2 {
+            .wrapper-1 {
                 @include size(100%, 420px);
                 display: flex;
                 margin: auto;
+                gap: auto;
                 img {
                     @include size(500px, 350px);
                     background-color: #D9D9D9;
+                    margin: auto 0;
                 }
-                .container-2-2-content {
-                    @include size(303.3px, 320px);
+                .content {
+                    @include size(303.3px, 100%);
+                    margin: auto;
                     .content-title-text {
-                        @include size(303.3px, 194px);
+                        @include size(303.3px, 75%);
                         margin-bottom: 20px;
                         h4 {
-                            @include size(303.3px, 114px);
-                            @include mainCon2Text(700, 20.68px, 37.65px, #373F41);
+                            @include size(303.3px, 60%);
+                            font-size: 28px;
                         }
                         p {
                             @include size(303.3px, 60px);
-                            @include mainCon2Text(400, 11.02px, 20.08px, #737B7D);
                         }
                     }
                     .field {
@@ -574,35 +577,32 @@ main {
                                 cursor: pointer;
                                 span {
                                     @include size(95px, 18px);
-                                    @include mainCon1Text(700, 9.64px, 17.57px, center, #FFFFFF);
                                 }
                             }
                         }
                         p {
                             @include size(293.3px, 30px);
-                            @include mainCon2Text(600m, 8.27px, 15.06px, #737B7D);
                         }
                     }
                 }
             }
-            .container-2-3 {
+            .wrapper-2 {
                 @include size(100%, 420px);
                 @include disFlexRowBet();
                 justify-content: center;
                 align-items: center;
                 margin: auto 0;
-                gap: 40px;
-                .container-2-3-content {
+                gap: 0;
+                .content {
                     @include size(100%, 284px);
                     object-fit: contain;
                     margin: auto 0;
                     gap: 60px;
                     h4 {
                         @include size(450px, 114px);
-                        @include mainCon2Text(700, 20.68px, 37.65px, #373F41);
                         margin-bottom: 30px;
                     }
-                    .container-2-3-column {
+                    .column {
                         @include size(466.7px, 110px);
                         gap: 30px;
                         display: flex;
@@ -614,7 +614,6 @@ main {
                             }
                             p {
                                 @include size(200px, 60px);
-                                @include mainCon2Text(400, 11.02px, 20.08px, #737B7D);
                             }
                         }
                         .right {
@@ -625,7 +624,6 @@ main {
                             }
                             p {
                                 @include size(200px, 60px);
-                                @include mainCon2Text(400, 11.02px, 20.08px, #737B7D);
                             }
                         }
                     }
@@ -636,27 +634,25 @@ main {
                     background-position: center center;
                 }
             }
-            .container-2-4 {
+            .gallery {
                 @include size(100%, 334px);
                 @include disFlexBet();
                 margin: auto;
-                .con-5-column {
+                .column {
                     @include size(188.3px, 334px);
                     gap: 20px;
                     img {
                         @include size(188.3px, 188.3px);
                     }
-                    .con-5-column-content {
+                    .content {
                         @include size(188.3px, 74px);
                         text-align: center;
                         gap: 15px;
                         h4 {
                             @include size(188.3px, 23px);
-                            @include mainCon1Text(700, 12.4px, 22.59px, center, #373F41);
                         }
                         p {
                             @include size(188.3px, 36px);
-                            @include mainCon1Text(400, 14px, 9.64px, center, #373F41);
                         }
                     }
                 }
@@ -667,9 +663,10 @@ main {
 
 @media (min-width: 600px) and (max-width: 991px) {
     body {
+        @include size(100%, 100vh);
         font-family: 'Mulish', sans-serif;
         padding: 0, 0, 60px, 0;
-        @include size(100%, 100vh);
+        font-size: 18px;
     }
 
     header {
@@ -690,10 +687,6 @@ main {
                 @include size(148.3px, 16px);
                 @include disFlexBet();
                 gap: 15px;
-                p {
-                    height: 16px;
-                    font-size: 7.74px;
-                }
             }
             .header-text-2 {
                 @include size(116.5px, 40px);
@@ -702,7 +695,6 @@ main {
                 gap: 10px;
                 .header-btn-login {
                     @include size(50px, 18px);
-                    @include mainCon1Text(700, 7.74px, 17.57ox, center, rgba(60, 100, 177, 1));
                     cursor: pointer;
                 }
                 .header-btn {
@@ -712,7 +704,6 @@ main {
                     cursor: pointer;
                     span {
                         font-weight: 600;
-                        font-size: 7.74px;
                     }
                 }
             }
@@ -737,7 +728,7 @@ main {
                 gap: 40px;
                 margin: auto;
                 z-index: 1;
-                .content-synthetic-synthetic {
+                .synthetic {
                     @include size(80%, 180px);
                     justify-content: center;
                     margin-bottom: 30px;
@@ -748,7 +739,6 @@ main {
                         justify-content: center;
                         margin-bottom: 60px;
                         .content-h3 {
-                            @include mainCon1Text(700, 24.32px, 55.22px, center, rgba(55, 63, 65, 1));
                             text-align: center;
                         }
                     }
@@ -756,33 +746,28 @@ main {
                         @include size(100%, 40px);
                         @include mainCon1TextP();
                         .content-text-p {
-                            @include mainCon1Text(400, 8.84px, 20.08px, center, rgba(115, 123, 125, 1));
                             text-align: center;
                         }
                     }
                 }
-                .container-btn-synthetic {
+                .btn-synthetic {
                     @include size(275px, 40px);
                     display: flex;
                     gap: 24px;
-                    .container-1-btn-1 {
+                    .btn-1 {
                         @include btn-1();
                         @include size(135px, 40px);
                         padding: 10px, 20px;
                         cursor: pointer;
                         span {
                             @include size(95px, 18px);
-                            @include mainCon1Text(700, 7.74px, 17.57px, center, white);
                         }
                     }
-                    .container-1-btn-2 {
+                    .btn-2 {
                         @include btn-2();
                         @include size(116px, 40px);
                         padding: 10px, 20px;
                         cursor: pointer;
-                        span {
-                            @include mainCon1Text(700, 7.74px, 17.57px, center, #3C64B1);
-                        }
                     }
                 }
             }
@@ -801,41 +786,39 @@ main {
             @include disFlexCoCen();
             object-fit: contain;
             gap: 80px;
-            .container-2-1 {
+            .features {
                 @include size(83.33%,298.33px);
                 @include disFlexCoCen();
                 object-fit: contain;
                 gap: 60px;
                 margin: auto;
-                .container-2-1-1 {
+                .content {
                     @include size(100%, 78px);
                     @include disFlexCoCen();
                     text-align: center;
                     gap: 20px;
                     margin: auto;
-                    .container-2-1-title {
-                        @include mainCon1Text(700, 16.58px, 37.65px, center, #373F41);
+                    .title {
                         @include size(100%, 38px);
                         object-fit: contain;
                         margin-bottom: 20px;
                     }
-                    .container-2-1-text {
-                        @include mainCon1Text(400, 8.84px, 20.08px, center, #737B7D);
+                    .text {
                         @include size(100%, 20px);
                         object-fit: contain;
                     }
                 }
-                .container-2-1-2 {
+                .columns {
                     @include size(100%, 160.33px);
                     @include disFlexRowBet();
                     align-items: center;
                     gap: 10px;
-                    .container-2-column {
+                    .column {
                         @include size(30%, 157px);
                         @include disFlexCoCen();
                         gap: 20px;
                         text-align: center;
-                        .column-div-icon-text {
+                        .icon-text {
                             @include size(100%, 119px);
                             object-fit: contain;
                             gap: 20px;
@@ -850,57 +833,52 @@ main {
                                 gap: 10px;
                                 h4 {
                                     @include size(100%, 23px);
-                                    @include mainCon1Text(700, 9.95px, 22.59px, center, #373F41);
                                     object-fit: contain;
                                     margin: auto;
                                 }
                                 p {
                                     @include size(100%, 36px);
-                                    @include mainCon1Text(400, 7.74px, 17.57px, center, #373F41);
                                     object-fit: contain;
                                 }
                             }
                         }
-                        .column-div-textual {
+                        .textual {
                             @include size(58px, 18px);
                             gap: 10px;
                             p {
                                 @include size(58px, 18px);
-                                @include mainCon1Text(700, 7.74px, 17.57px, center, #3C64B1);
                             }
                         }
                     }
                 }
             }
-            .container-2-2 {
+            .wrapper-1 {
                 @include size(100%, 420px);
                 display: flex;
                 justify-content: space-between;
                 margin: auto;
-                gap: 40px;
+                gap: 0;
                 img {
                     width: 45%;
                     object-fit: contain;
                     background-color: transparent;
                 }
-                .container-2-2-content {
-                    @include size(45%, 320px);
+                .content {
+                    @include size(50%, 100%);
                     margin: auto 0;
                     gap: 40px;
                     .content-title-text {
-                        @include size(100%, 194px);
+                        @include size(100%, 70%);
                         object-fit: contain;
                         margin: auto;
                         gap: 20px;
                         h4 {
-                            @include size(100%, 114px);
-                            @include mainCon2Text(700, 16.58px, 37.65px, #373F41);
+                            @include size(100%, 60%);
                             margin: auto;
                             object-fit: contain;
                         }
                         p {
-                            @include size(100%, 60px);
-                            @include mainCon2Text(400, 8.84px, 20.08px, #737B7D);
+                            @include size(100%, 40%);
                             margin: auto;
                             object-fit: contain;
                         }
@@ -928,42 +906,40 @@ main {
                                 cursor: pointer;
                                 span {
                                     @include size(95px, 18px);
-                                    @include mainCon1Text(700, 7.74px, 17.57px, center, #FFFFFF);
                                 }
                             }
                         }
                         p {
                             @include size(100%, 30px);
-                            @include mainCon2Text(600m, 6.63px, 15.06px, #737B7D);
                         }
                     }
                 }
             }
-            .container-2-3 {
+            .wrapper-2 {
                 @include size(100%, 420px);
                 @include disFlexRowBet();
                 object-fit: contain;
-                gap: 40px;
+                gap: auto;
                 margin: auto;
                 align-items: center;
-                .container-2-3-content {
-                    @include size(45%, 284px);
+                .content {
+                    @include size(50%, 284px);
                     object-fit: contain;
                     margin: auto 0;
-                    gap: 60px;
+                    gap: auto;
                     h4 {
                         @include size(100%, 114px);
-                        @include mainCon2Text(700, 16.58px, 37.65px, #373F41);
                         object-fit: contain;
                         margin-bottom: 30px;
+                        font-size: 24px;
                     }
-                    .container-2-3-column {
+                    .column {
                         @include size(100%, 110px);
                         object-fit: contain;
                         display: flex;
-                        gap: 30px;
+                        gap: auto;
                         .left {
-                            @include size(40%, 110px);
+                            @include size(45%, 110px);
                             object-fit: contain;
                             gap: 20px;
                             img {
@@ -971,12 +947,11 @@ main {
                             }
                             p {
                                 @include size(100%, 60px);
-                                @include mainCon2Text(400, 8.84px, 20.08px, #737B7D);
                                 object-fit: contain;
                             }
                         }
                         .right {
-                            @include size(40%, 110px);
+                            @include size(45%, 110px);
                             object-fit: contain;
                             gap: 20px;
                             img {
@@ -984,7 +959,6 @@ main {
                             }
                             p {
                                 @include size(100%, 60px);
-                                @include mainCon2Text(400, 8.84px, 20.08px, #737B7D);
                                 object-fit: contain;
                             }
                         }
@@ -997,33 +971,29 @@ main {
                     background-position: center center;
                 }
             }
-            .container-2-4 {
+            .gallery {
                 @include size(100%, 334px);
-                @include disFlexBet();
                 object-fit: contain;
+                display: flex;
+                flex-wrap: wrap;
                 margin: auto;
-                .con-5-column {
-                    @include size(20%, 334px);
-                    object-fit: contain;
+                .column {
+                    @include size(45%, 334px);
                     gap: 20px;
                     img {
-                        @include size(100%, 220px);
+                        @include size(100%, 240px);
                         object-fit: contain;
                     }
-                    .con-5-column-content {
+                    .content {
                         @include size(100%, 74px);
                         object-fit: contain;
                         text-align: center;
                         gap: 15px;
                         h4 {
                             @include size(100%, 23px);
-                            @include mainCon1Text(700, 9.95px, 22.59px, center, #373F41);
-                            object-fit: contain;
                         }
                         p {
                             @include size(100%, 36px);
-                            @include mainCon1Text(400, 7.74px, 17.57px, center, #373F41);
-                            object-fit: contain;
                         }
                     }
                 }
@@ -1038,6 +1008,7 @@ main {
         padding: 0, 0, 60px, 0;
         @include size(100%, 2498.33px);
         object-fit: contain;
+        font-size: 18px;
     }
 
     header {
@@ -1045,51 +1016,46 @@ main {
         object-fit: contain;
         background-color: rgba(239, 243, 255, 1);
         position: sticky;
+        padding: auto;
         gap: 10px;
         .header {
-            @include size(83.33%, 40px);
+            display: none;
+        }
+        .menu {
+            @include size(100%, 40px);
             @include disFlexBet();
-            object-fit: contain;
+            padding: 23px 0;
             align-items: center;
             margin: 0 auto;
-            .header-logo {
-                @include size(15%, 16.5px);
-                object-fit: contain;
-                cursor: pointer;
-            }
-            .header-text-1 {
-                @include size(30%, 18px);
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                gap: 5px;
-                p {
-                    height: 14px;
-                    font-size: 5.8px;
+            .dropdown {
+                position: relative;
+                display: inline-block;
+                img {
+                    width: 30px;
                 }
-            }
-            .header-text-2 {
-                @include size(30%, 40px);
-                @include disFlexBet();
-                object-fit: contain;
-                align-items: center;
-                gap: 5px;
-                .header-btn-login {
-                    @include size(40%, 18px);
-                    object-fit: contain;
-                    @include mainCon1Text(700, 5.8px, 17.57px, center, rgba(60, 100, 177, 1));
-                    cursor: pointer;
-                }
-                .header-btn {
-                    @include size(50%, 40px);
-                    @include btn-1();
-                    object-fit: contain;
-                    cursor: pointer;
-                    padding: 5px 10px;
-                    span {
-                        font-size: 5.8px;
+                .dropdown-content {
+                    display: none;
+                    position: absolute;
+                    background-color: #f9f9f9;
+                    min-width: 160px;
+                    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                    padding: 12px 16px;
+                    z-index: 1;
+                    right: 10px;
+                    gap: 15px;
+                    .header-btn-login {
+                        @include btn-2();
+                        text-align: center;
+                    }
+                    .header-btn {
+                        @include btn-1();
+                        width: 100%;
+                        padding: 5px 0;
                     }
                 }
+            }
+            .dropdown:hover .dropdown-content {
+                display: block;
             }
         }
     }
@@ -1107,24 +1073,24 @@ main {
                 @include size(100%, 260px);
                 @include disFlexCoCen();
                 object-fit: contain;
-                gap: 40px;
+                gap: 100px;
                 margin: auto;
                 z-index: 1;
                 position: absolute;
                 top: 150px;
                 left: 0;
-                .content-synthetic-synthetic {
+                .synthetic {
                     @include size(80%, 180px);
                     object-fit: contain;
-                    gap: 30px;
+                    gap: 90px;
                     .content-content {
                         @include size(100%, 110px);
                         @include mainCon1TextP();
                         object-fit: contain;
-                        margin-bottom: 20px;
+                        margin-bottom: 50px;
                         .content-h3 {
-                            @include mainCon1Text(700, 18.3px, 55.22px, center, rgba(55, 63, 65, 1));
                             text-align: center;
+                            font-size: 30px;
                         }
                     }
                     .content-text {
@@ -1132,12 +1098,11 @@ main {
                         @include mainCon1TextP();
                         object-fit: contain;
                         .content-text-p {
-                            @include mainCon1Text(400, 6.7px, 20.08px, center, rgba(115, 123, 125, 1));
                             text-align: center;
                         }
                     }
                 }
-                .container-btn-synthetic {
+                .btn-synthetic {
                     @include size(40%, 40px);
                     object-fit: contain;
                     display: flex;
@@ -1150,7 +1115,6 @@ main {
                         cursor: pointer;
                         span {
                             @include size(95px, 18px);
-                            @include mainCon1Text(700, 5.8px, 17.57px, center, white);
                         }
                     }
                     .container-1-btn-2 {
@@ -1159,9 +1123,6 @@ main {
                         object-fit: contain;
                         padding: 5px 10px;
                         cursor: pointer;
-                        span {
-                            @include mainCon1Text(700, 5.8px, 17.57px, center, #3C64B1);
-                        }
                     }
                 }
             }
@@ -1176,43 +1137,47 @@ main {
             }
         }
         .container-2 {
-            @include size(83.33%, 1712.33px);
+            @include size(83.33%, fit-content);
             @include disFlexCoCen();
             object-fit: contain;
-            gap: 80px;
-            .container-2-1 {
-                @include size(100%,298.33px);
+            gap: 100px;
+            .features {
+                width: 100%;
+                height: 700px;
                 @include disFlexCoCen();
                 object-fit: contain;
-                gap: 30px;
-                margin: auto;
-                .container-2-1-1 {
+                gap: 50px;
+                margin:0 auto;
+                .content {
                     @include size(100%, 78px);
                     @include disFlexCoCen();
                     object-fit: contain;
                     text-align: center;
-                    gap: 10px;
-                    margin: auto;
-                    .container-2-1-title {
-                        @include mainCon1Text(700, 12.5px, 37.65px, center, #373F41);
+                    gap: 20px;
+                    margin: 0;
+                    .title {
                         @include size(100%, 38px);
+                        font-size: 28px;
                     }
-                    .container-2-1-text {
-                        @include mainCon1Text(400, 6.7px, 20.08px, center, #737B7D);
+                    .text {
                         @include size(100%, 20px);
+                        font-size: 18px;
                     }
                 }
-                .container-2-1-2 {
+                .columns {
                     @include size(100%, 160.33px);
-                    @include disFlexRowBet();
+                    display: flex;
+                    flex-direction: column;
                     object-fit: contain;
                     gap: 40px;
-                    .container-2-column {
+                    .column {
                         @include size(33%, 157px);
                         @include disFlexCoCen();
                         object-fit: contain;
                         text-align: center;
+                        align-items: center;
                         gap: 20px;
+                        margin: 0 auto;
                         .column-div-icon-text {
                             @include size(100%, 119px);
                             object-fit: contain;
@@ -1228,12 +1193,10 @@ main {
                                 gap: 10px;
                                 h4 {
                                     @include size(100%, 23px);
-                                    @include mainCon1Text(700, 7.5px, 22.59px, center, #373F41);
                                     object-fit: contain;
                                 }
                                 p {
                                     @include size(100%, 36px);
-                                    @include mainCon1Text(400, 5.8px, 17.57px, center, #373F41);
                                     object-fit: contain;
                                 }
                             }
@@ -1244,28 +1207,26 @@ main {
                             gap: 10px;
                             p {
                                 @include size(100%, 18px);
-                                @include mainCon1Text(700, 5.8px, 17.57px, center, #3C64B1);
                                 object-fit: contain;
                             }
                         }
                     }
                 }
             }
-            .container-2-2 {
+            .wrapper-1 {
                 @include size(100%, none);
                 object-fit: contain;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                margin: auto;
                 gap: 40px;
                 img {
                     @include size(50%, 420px);
                     object-fit: contain;
                     background-color: #D9D9D9;
                 }
-                .container-2-2-content {
+                .content {
                     @include size(100%, 320px);
                     object-fit: contain;
                     margin: auto;
@@ -1276,12 +1237,10 @@ main {
                         gap: 20px;
                         h4 {
                             @include size(100%, 114px);
-                            @include mainCon2Text(700, 12.5px, 37.65px, #373F41);
                             object-fit: contain;
                         }
                         p {
                             @include size(100%, 60px);
-                            @include mainCon2Text(400, 6.7px, 20.08px, #737B7D);
                             object-fit: contain;
                         }
                     }
@@ -1312,25 +1271,23 @@ main {
                                 cursor: pointer;
                                 span {
                                     @include size(95px, 18px);
-                                    @include mainCon1Text(700, 5.8px, 17.57px, center, #FFFFFF);
                                 }
                             }
                         }
                         p {
                             @include size(100%, 30px);
-                            @include mainCon2Text(600m, 5px, 15.06px, #737B7D);
                             object-fit: contain;
                         }
                     }
                 }
             }
-            .container-2-3 {
+            .wrapper-2 {
                 @include size(100%, 420px);
                 @include disFlexCoCen();
                 object-fit: contain;
                 margin: auto;
                 gap: 40px;
-                .container-2-3-content {
+                .content {
                     @include size(100%, 284px);
                     object-fit: contain;
                     margin: auto 0;
@@ -1338,9 +1295,8 @@ main {
                     h4 {
                         @include size(100%, 114px);
                         object-fit: contain;
-                        @include mainCon2Text(700, 12.5px, 37.65px, #373F41);
                     }
-                    .container-2-3-column {
+                    .column {
                         @include size(100%, 110px);
                         object-fit: contain;
                         gap: 30px;
@@ -1354,7 +1310,6 @@ main {
                             }
                             p {
                                 @include size(100%, 60px);
-                                @include mainCon2Text(400, 6.7px, 20.08px, #737B7D);
                                 object-fit: contain;
                             }
                         }
@@ -1367,7 +1322,6 @@ main {
                             }
                             p {
                                 @include size(100%, 60px);
-                                @include mainCon2Text(400, 6.7px, 20.08px, #737B7D);
                                 object-fit: contain;
                             }
                         }
@@ -1380,32 +1334,30 @@ main {
                     background-position: center center;
                 }
             }
-            .container-2-4 {
+            .gallery {
                 @include size(100%, 334px);
                 @include disFlexBet();
                 object-fit: contain;
-                margin-top: 50px;
                 display: flex;
                 flex-wrap: wrap;
-                .con-5-column {
+                margin-top: auto;
+                .column {
                     @include size(45%, 334px);
                     gap: 20px;
                     img {
                         @include size(100%, 240px);
                         object-fit: contain;
                     }
-                    .con-5-column-content {
+                    .content {
                         @include size(100%, 74px);
                         object-fit: contain;
                         text-align: center;
                         gap: 15px;
                         h4 {
                             @include size(100%, 23px);
-                            @include mainCon1Text(700, 7.5px, 22.59px, center, #373F41);
                         }
                         p {
                             @include size(100%, 36px);
-                            @include mainCon1Text(400, 5.8px, 17.57px, center, #373F41);
                         }
                     }
                 }
