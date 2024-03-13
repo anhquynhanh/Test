@@ -4,159 +4,134 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
-        <link rel="stylesheet" href="./assets/css/main.css">
+        <link rel="stylesheet" href="./assets/css/app.css">
     </head>
     <body>
         <header>
             <div class="header">
-                <img class="header-logo" src="./assets/images/logo/Logo.svg" alt="">
-                <ul class="header-links">
+                <img class="header__logo" src="./assets/images/logo/Logo.svg" alt="">
+                <ul class="header__links">
                     <li><a href="">Features</a></li>
                     <li><a href="">Pricing</a></li>
                     <li><a href="">Contact</a></li>
                 </ul>
-                <div class="header-btn">
-                    <a class="btn-login" href="">
-                        Log In
-                    </a>
-                    <button class="btn-start">
-                        <span>Start now</span>
-                    </button>
+                <div class="header__btn">
+                    <a class="btn--white" href="">Log In</a>
+                    <a class="btn--blue" href="">Start now</a>
                 </div>
+                <img class="header--menu" src="./assets/images/menu.png" alt="">
             </div>
         </header>
         <main>
-            <figure class="container-1">
-                <img class="bg" src="./assets/images/main/container-1/bg.jpeg" alt="">
-                <div class="content-synthetic">
-                    <div class="synthetic">
-                        <div class="content">
-                            <h3 class="content-h3">
-                                Simplify your online shipping for free this month!
-                            </h3>
-                        </div>
-                        <div class="content-text">
-                            <p class="content-text-p">Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum. At nam minimum ponderum. Est audiam animal molestiae te.</p>
-                        </div>
-                    </div>
-                    <div class="btn-synthetic">
-                        <button class="btn-1">
+            <figure class="main__figure">
+                <img class="figure__bg" src="./assets/images/main/container-1/bg.jpeg" alt="">
+                <figcaption>
+                    <h3>Simplify your online shipping for free this month!</h3>
+                    <p class="p--gray">Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum. At nam minimum ponderum. Est audiam animal molestiae te.</p>
+                    <div class="figcaption__btn">
+                        <button class="btn--blue">
                             <span>Start free trial</span>
                         </button>
-                        <button class="btn-2">
+                        <button class="btn--white">
                             <span>Learn more</span>
                         </button>
                     </div>
-                </div>
+                </figcaption>
             </figure>
-            <section class="container-2">
-                <div class="features">
-                    <div class="content">
-                        <h4 class="title">
-                            Grow your business with better Shipping
-                        </h4>
-                        <p class="text">
-                            We help the world’s leading organizations follow their shipping
-                        </p>
+            <section class="main__container">
+                <section class="container__features">
+                    <div class="features__content">
+                        <h4>Grow your business with better Shipping</h4>
+                        <p class="p--gray">We help the world’s leading organizations follow their shipping</p>
                     </div>
-                    <ul class="columns">
-                        <li class="column">
-                            <div class="icon-text">
+                    <ul>
+                        <li>
+                            <div>
                                 <img src="./assets/images/main/container 2/ex3/logistic.png" alt="">
-                                <div class="column-title-text">
+                                <div>
                                     <h5>Logistic performance</h5>
-                                    <p>At eripuit signiferumque sea, vel ad mucius molestie, cu labitur iuvaret vulputate sed.</p>
+                                    <p class="p--black">At eripuit signiferumque sea, vel ad mucius molestie, cu labitur iuvaret vulputate sed.</p>
                                 </div>
                             </div>
-                            <a class="textual" href="">
-                                <p>Discover</p>
-                            </a>
+                            <a class="p--blue" href="">Discover</a>
                         </li>
-                        <li class="column">
-                            <div class="icon-text">
+                        <li>
+                            <div>
                                 <img style="width: 33.33px;" src="./assets/images/main/container 2/ex3/shipping.png" alt="">
-                                <div class="column-title-text">
+                                <div>
                                     <h5>Shipping communication</h5>
-                                    <p>At eripuit signiferumque sea, vel ad mucius molestie, cu labitur iuvaret vulputate sed.</p>
+                                    <p class="p--black">At eripuit signiferumque sea, vel ad mucius molestie, cu labitur iuvaret vulputate sed.</p>
                                 </div>
                             </div>
-                            <a class="textual" href="">
-                                <p>Discover</p>
-                            </a>
+                            <a class="p--blue" href="">Discover</a>
                         </li>
-                        <li class="column">
-                            <div class="icon-text">
+                        <li>
+                            <div>
                                 <img src="./assets/images/main/container 2/ex3/marketing.png" alt="">
-                                <div class="column-title-text">
+                                <div>
                                     <h5>Marketing</h5>
-                                    <p>At eripuit signiferumque sea, vel ad mucius molestie, cu labitur iuvaret vulputate sed.</p>
+                                    <p class="p--black">At eripuit signiferumque sea, vel ad mucius molestie, cu labitur iuvaret vulputate sed.</p>
                                 </div>
                             </div>
-                            <a class="textual" href="">
-                                <p>Discover</p>
-                            </a>
+                            <a class="p--blue" href="">Discover</a>
                         </li>
                     </ul>
-                </div>
-                <div class="wrapper-1">
-                    <img src="./assets/images/main/container 2/ex4/Rectangle 1.png" alt="">
-                    <div class="content">
-                        <div class="content-title-text">
-                            <h4>Ad eos saepe lucilius, noster postulant philosophia ea usu, qui dicta sadipscing te.</h4>
-                            <p>Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum. At nam minimum ponderum. Est audiam animal molestiae te. Ex duo eripuit mentitum.</p>
-                        </div>
-                        <div class="field">
-                            <form class="form">
-                                <input type="text" placeholder="Placeholder">
-                                <button class="btn-con-2">
-                                    <span>Start free trial</span>
-                                </button>
-                            </form>
+                </section>
+                <div class="container__wrapper__top">
+                    <img class="top__img" src="./assets/images/main/container 2/ex4/Rectangle 1.png" alt="">
+                    <div class="top__content">
+                        <h4>Ad eos saepe lucilius, noster postulant philosophia ea usu, qui dicta sadipscing te.</h4>
+                        <p class="p--gray">Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum. At nam minimum ponderum. Est audiam animal molestiae te. Ex duo eripuit mentitum.</p>
+                        <form>
+                            <input type="text" placeholder="Placeholder">
+                            <button class="btn--blue">
+                                <span>Start free trial</span>
+                            </button>
                             <p>By clicking “Primary action” you accepting ipsum dolor sit amet, sit ea brute mediocritatem, eu sed aliquam scripserit dissentiunt.</p>
-                        </div>
+                        </form>
                     </div>
                 </div>
-                <div class="wrapper-2">
-                    <div class="content">
+                <div class="container__wrapper__bottom">
+                    <div class="bottom__content">
                         <h4>Fostering creativity and innovationeam definiebas reformidans, exerci persecuti</h4>
-                        <ul class="column">
-                            <li class="left">
+                        <ul>
+                            <li>
                                 <img src="./assets/images/main/container 2/ex5/Group 3.png" alt="">
-                                <p>Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum.</p>
+                                <p class="p--gray">Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum.</p>
                             </li>
-                            <li class="right">
+                            <li>
                                 <img src="./assets/images/main/container 2/ex5/Group 4.png" alt="">
-                                <p>At nam minimum ponderum. Est audiam animal molestiae te. Ex duo eripuit mentitum.</p>
+                                <p class="p--gray">At nam minimum ponderum. Est audiam animal molestiae te. Ex duo eripuit mentitum.</p>
                             </li>
                         </ul>
                     </div>
-                    <img src="./assets/images/main/container 2/ex5/Rectangle 2.png" alt="">
+                    <img class="bottom__img" src="./assets/images/main/container 2/ex5/Rectangle 2.png" alt="">
                 </div>
-                <ul class="gallery">
-                    <li class="column">
-                        <img src="./assets/images/main/container 2/ex6/pic1.png" alt="">
-                        <div class="content">
+                <ul class="container__gallery">
+                    <li>
+                        <img class="gallery__img" src="./assets/images/main/container 2/ex6/pic1.png" alt="">
+                        <div class="gallery__content">
                             <h5>Ad eos saepe lucilius</h5>
                             <p>At eripuit signiferumque sea, vel ad mucius molestie, cu labitur.</p>
                         </div>
                     </li>
-                    <li class="column">
-                        <img src="./assets/images/main/container 2/ex6/pic2.png" alt="">
-                        <div class="content">
+                    <li>
+                        <img class="gallery__img" src="./assets/images/main/container 2/ex6/pic2.png" alt="">
+                        <div class="gallery__content">
                             <h5>Ad eos saepe lucilius</h5>
                             <p>At eripuit signiferumque sea, vel ad mucius molestie, cu labitur.</p>
                         </div>
                     </li>
-                    <li class="column">
-                        <img src="./assets/images/main/container 2/ex6/pic3.png" alt="">
-                        <div class="content">
+                    <li>
+                        <img class="gallery__img" src="./assets/images/main/container 2/ex6/pic3.png" alt="">
+                        <div class="gallery__content">
                             <h5>Ad eos saepe lucilius</h5>
                             <p>At eripuit signiferumque sea, vel ad mucius molestie, cu labitur.</p>
                         </div>
                     </li>
-                    <li class="column">
-                        <img src="./assets/images/main/container 2/ex6/pic4.png" alt="">
-                        <div class="content">
+                    <li>
+                        <img class="gallery__img" src="./assets/images/main/container 2/ex6/pic4.png" alt="">
+                        <div class="gallery__content">
                             <h5>Ad eos saepe lucilius</h5>
                             <p>At eripuit signiferumque sea, vel ad mucius molestie, cu labitur.</p>
                         </div>
