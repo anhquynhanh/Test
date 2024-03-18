@@ -195,7 +195,6 @@ figcaption p {
 }
 .container__features ul {
 	margin: 0 60px;
-	gap: 40px;
 }
 .container__features ul li {
 	justify-content: space-between;
@@ -231,11 +230,11 @@ form input {
 	border: none;
 	padding: 10px;
 	font-size: 16px;
-	grid-column: 1/6;
+	grid-column: 1/10;
 	background-color: #F4F5F4;
 }
 form button {
-	grid-column: 6/6;
+	grid-column: 10/10;
 }
 form p {
 	font-weight: 600;
@@ -291,6 +290,9 @@ form p {
 	}
 }
 @media (max-width: 768px) {
+	.container__features ul {
+		margin: auto;
+	}
 	.container__wrapper__top, .container__wrapper__bottom {
 		flex-direction: column;
 		align-items: center;
