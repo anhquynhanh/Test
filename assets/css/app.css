@@ -6,7 +6,7 @@
 }
 body {
     font-family: 'Mulish', sans-serif;
-    padding: 0, 0, 60px, 0;
+    padding-bottom: 60px;
     font-size: 16px;
     margin: 0 auto;
     color: #373F41;
@@ -65,14 +65,24 @@ a {
     font-weight: 700;
     font-size: 14px;
     line-height: 17.57px;
+    cursor: pointer;
 }
 .btn--blue {
     background-color: #3C64B1;
     color: #fff;
 }
+.btn--blue:hover {
+	background-color: #EFF3FF;
+	border: 1px solid #3C64B1;
+	color: #3C64B1;
+}
 .btn--white {
     background-color: none;
     color: #3C64B1;
+}
+.btn--white:hover {
+	background-color: #3C64B1;
+	color: white;
 }
 .gallery__img {
     width: 100%;
@@ -184,6 +194,7 @@ figcaption p {
 	gap: 20px;
 }
 .container__features ul {
+	margin: 0 60px;
 	gap: 40px;
 }
 .container__features ul li {
@@ -202,11 +213,10 @@ figcaption p {
 }
 .container__wrapper__top, .container__wrapper__bottom {
 	display: flex;
-	margin: auto;
 	gap: 40px;
 }
-.top__content {
-	margin: auto;
+.top__content, .bottom__content {
+	justify-content: center;
 	gap: 40px;
 }
 form {
@@ -235,7 +245,6 @@ form p {
 	margin-top: 16px;
 }
 .bottom__content {
-	margin: auto;
 	gap: 60px;
 }
 .bottom__content h4 {
@@ -244,8 +253,8 @@ form p {
 .bottom__content ul {
 	gap: 30px;
 }
-.bottom__content li {
-	gap: 20px;
+.bottom__content li img {
+	margin-bottom: 20px;
 }
 .container__gallery {
 	flex-direction: row;
