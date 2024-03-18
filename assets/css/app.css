@@ -315,16 +315,13 @@ form p {
         padding: 23px 20px;
         z-index: 999;
     }
-	.header__links,
-    .header__btn {
-        display: none;
-    }
     .header--menu {
         display: block;
         cursor: pointer;
     }
     .header__links,
     .header__btn {
+        display: none;
         flex-direction: row;
         justify-content: space-between;
         position: absolute;
