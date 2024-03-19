@@ -71,18 +71,12 @@ a {
     background-color: #3C64B1;
     color: #fff;
 }
-.btn--blue:hover {
-	background-color: #EFF3FF;
-	border: 1px solid #3C64B1;
-	color: #3C64B1;
-}
 .btn--white {
     background-color: none;
     color: #3C64B1;
 }
-.btn--white:hover {
-	background-color: #3C64B1;
-	color: white;
+.btn--padding--0 {
+	padding: 0;
 }
 .gallery__img {
     width: 100%;
@@ -106,19 +100,16 @@ figure figcaption, .container__features, .features__content,
 
 header {
 	background-color: #EFF3FF;
+	padding: 23px 72px;
 	z-index: 999;
 	gap: 10px;
 }
 .header {
 	display: flex;
 	justify-content: space-between;
-	margin: 0 auto;
 	align-items: center;
-	padding: 23px 72px;
 }
 .header__links {
-	display: flex;
-	justify-content: space-between;
 	gap: 30px;
 }
 .header__links a {
@@ -214,9 +205,16 @@ figcaption p {
 	display: flex;
 	gap: 40px;
 }
-.top__content, .bottom__content {
+.top__content {
 	justify-content: center;
+	margin: auto 0;
 	gap: 40px;
+}
+.top__content h4, .top__content .content__text {
+	padding-right: 20px;
+}
+.top__content .content__text {
+	line-height: 20.08px;
 }
 form {
 	gap: 20px;
@@ -244,16 +242,22 @@ form p {
 	margin-top: 16px;
 }
 .bottom__content {
+	justify-content: center;
 	gap: 60px;
 }
 .bottom__content h4 {
-	margin-right: 20px;
+	width: calc(100% - 20px);
 }
 .bottom__content ul {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
 	gap: 30px;
 }
 .bottom__content li img {
 	margin-bottom: 20px;
+}
+.bottom__content li p {
+	width: calc(100% - 20px);
 }
 .container__gallery {
 	flex-direction: row;
@@ -268,12 +272,8 @@ form p {
 }
 
 @media (max-width: 1080px) {
-	body, header, main {
+	body, main {
 		width: 100%;
-	}
-	.header {
-		justify-content: space-around;
-		padding: 23px 0;
 	}
 	.main__figure {
 		width: 100%;
@@ -309,10 +309,11 @@ form p {
 	}
 }
 @media (max-width: 480px) {
+	header {
+		padding: 23px 10px;
+	}
 	.header {
         position: relative;
-        justify-content: space-between;
-        padding: 23px 20px;
         z-index: 999;
     }
     .header--menu {
@@ -325,8 +326,8 @@ form p {
         flex-direction: row;
         justify-content: space-between;
         position: absolute;
-        top: 110%;
-        right: 20px;
+        top: 200%;
+        right: 0;
         background-color: #EFF3FFFF;
         padding: 20px 30px;
         border: 1px solid #ccc;
@@ -334,7 +335,7 @@ form p {
         gap: 10px;
     }
     .header__btn {
-        top: 185%;
+        top: 380%;
         justify-content: space-around;
     }
     figcaption {
@@ -350,6 +351,10 @@ form p {
     }
     form input, form button {
 		grid-column: 1/1;
+    }
+    .bottom__content ul {
+    	display: flex;
+    	flex-direction: column;
     }
     .container__gallery li {
     	width: 50%;
