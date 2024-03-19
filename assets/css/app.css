@@ -217,7 +217,7 @@ figcaption p {
 	line-height: 20.08px;
 }
 form {
-	gap: 20px;
+	gap: 16px;
 }
 form div {
 	display: grid;
@@ -239,7 +239,6 @@ form p {
 	font-size: 12px;
 	line-height: 15.06px;
 	color: #737B7D;
-	margin-top: 16px;
 }
 .bottom__content {
 	justify-content: center;
